@@ -2,11 +2,11 @@ import React from "react";
 import "./styles.css"
 import Footer from "../Footer";
 import NavProfile from "../Nav-profile";
-import About from "../Home/About";
-import Experiencia from "../Home/Experiencia";
-import Formacao from "../Home/Formacao";
-import Habilidades from "../Home/Habilidades";
-import Contato from "../Home/Contato";
+import About from "./About";
+import Experiencia from "./Experiencia";
+import Formacao from "./Formacao";
+import Habilidades from "./Habilidades";
+import Contato from "./Contato";
 
 function Profile() {
 	return (

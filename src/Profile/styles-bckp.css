@@ -1,11 +1,10 @@
-/******************* PRINCIPAL *******************************/
 .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
 
-    /*border: solid 1px cadetblue;*/
+    border: solid 1px cadetblue;
 }
 
 .about-content {
@@ -13,9 +12,10 @@
     flex-direction: column;
     align-items: center;
     margin-top: 70px;
+    /*height: auto;*/
     width: 70%;
 
-    /*border: solid 1px green;*/
+    border: solid 1px green;
 }
 
 .container-title {
@@ -29,11 +29,12 @@
     align-items: center;
     align-content: center;
     padding: 15px;
-    border-top: solid 1px #444;
+    border: solid 1px burlywood;
 }
 
 .cont-desc-timeline {
     height: auto;
+    padding-top: 160px;
     width: 90%;
 }
 
@@ -44,7 +45,7 @@
     width: 200px;
     margin-left: 10px;
     border-radius: 50%;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     background-color: #bde87b;
 }
 
@@ -64,38 +65,47 @@
     text-align: justify;
     /*letter-spacing: -0.015em;*/
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     background-color: #E6E6E6;
 }
 
-/**************************** EXPERIENCIA ***********************************/
+/**************************** TimeLine ******************/
 
 .line {
     display: flex;
-    flex-direction: column;
-    align-self: flex-start;
+    flex-direction: row;
     position: absolute;
-    height: 200%;
+    height: 689px;
     width: 7px;
     background-color: #49515e;
+    z-index: 1;
+    margin-left: 348px;
     border-radius: 20px;
-    margin-left: 31.4%;
+    margin-top: -10em;
 }
 
-.year-container {
+.year {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+    margin-left: 323px;
+    border-radius: 50%;
 }
-
-.year-container-right {
-    margin-right: 14px;
+.year-1 {
+    background-color: #00a79b;
+    margin-top: -475px;
 }
-.year-container-left {
-    margin-left: 14px;
+.year-2 {
+    margin-top: -175px;
+    background-color: #f74c25;
 }
-
+.year-3 {
+    background-color: #a2005a;
+    margin-top: 96px;
+}
 .year-content {
     color: white;
     display: flex;
@@ -105,54 +115,50 @@
     margin: 17px 0 0 9px;
 }
 
-.year {
-    display: flex;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin-top: -70px;
-}
-.year-1 {
-    background-color: #00a79b;
-}
-.year-2 {
-    background-color: #f74c25;
-}
-.year-3 {
-    background-color: #a2005a;
-}
 
-.content-cards {
+
+
+.main-timeline-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 63vw;
+    height: 100vh;
     position: relative;
-    margin-bottom: 2em;
-    z-index: 1;
+    /*border: solid 1px white;*/
+    width: 700px;
 }
+.content-L {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-top: -146px;
+    height: auto;
 
-.content-cards-direita {
-    flex-direction: row-reverse;
+    border:solid 1px yellow;
+}
+.content-R {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: -146px;
+    /*border-style: dotted solid;*/
+    height: auto;
+
+    border:solid 1px yellow;
 }
 
 .card-timeline-1 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
+    display: block;
 }
 
 .card-timeline-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 5%;
+    display: block;
+    margin-top: 300px;
 }
 
 .card-timeline-3 {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    align-items: flex-end;
+    margin-top: 300px;
 }
 
 .container-header-card {
@@ -162,11 +168,11 @@
 .title-card {
     display: flex;
     flex-direction: column;
-    width: 338px;
+    width: 300px;
     height: 70px;
     border-bottom: solid 2px #323436;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     color: #E6E6E6;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
 }
 
 .title-card-1 {
@@ -174,11 +180,11 @@
 }
 .title-card-2 {
     /*background-color: #a2005a;*/
-    border: solid 1px #f74c25;
+    border: solid 1px #a2005a;
 }
 .title-card-3 {
     /*background-color: #a2005a;*/
-    border: solid 1px #a2005a;
+    border: solid 1px #f74c25;
 }
 
 .title-card > h4 {
@@ -189,7 +195,7 @@
 .title-card > h6 {
     padding: 0;
     margin: 14px 0 3px 14px;
-    color: #687487;
+    color: #626e82;
     font-size: 14px;
 }
 
@@ -201,6 +207,14 @@
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
 }
+.triangulo-para-direita-1 {
+    border-left: 15px solid #00a79b;
+}
+
+.triangulo-para-direita-2 {
+    border-left: 15px solid #a2005a;
+}
+
 
 .triangulo-para-esquerda {
     display: flex;
@@ -210,58 +224,40 @@
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
 }
-
-.triangulo-para-direita-1 {
-    border-left: 15px solid #00a79b;
-}
-
-.triangulo-para-esquerda-2 {
+.triangulo-para-esquerda {
     border-right: 15px solid #f74c25;
-}
-
-.triangulo-para-direita-3 {
-    border-left: 15px solid #a2005a;
 }
 
 .description-card-L {
     display: flex;
-    width: 340px;
-    height: auto;
-    padding-bottom: 12px;
+    width: 302px;
+    height: 200px;
     border-radius: 0px 0px 8px 8px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
 }
 .description-card-01{
     background: rgb(0,167,155);
     background: linear-gradient(184deg, rgba(0,167,155,1) 0%, rgba(44,51,54,1.0) 100%);
 }
-
 .description-card-02{
-    background: rgb(210, 75, 0);
-    background: linear-gradient(184deg, rgb(220, 79, 0) 0%, rgb(106, 43, 8) 100%);
-}
-
-.description-card-03{
     background: rgb(153, 4, 92);
     background: linear-gradient(184deg, rgb(153, 4, 92) 0%, rgb(61, 31, 57) 100%);
 }
 
 .description-content {
-    color: #cecece;
+    color: snow;
     margin-left: 14px;
-    padding-top: 12px;
-    padding-right: 12px;
-    text-align: justify;
 }
 
 .description-card-R {
     display: flex;
-    width: 340px;;
-    height: auto;
-    padding-bottom: 12px;
+    width: 300px;
+    height: 200px;
     margin-left: 15px;
     border-radius: 0px 0px 8px 8px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
+}
+.description-card-03{
+    background: rgb(210, 75, 0);
+    background: linear-gradient(184deg, rgb(220, 79, 0) 0%, rgb(106, 43, 8) 100%);
 }
 
 .rotated-half-circle-01 {
@@ -269,56 +265,41 @@
     height: 70px;
     border: 5px solid rgb(0,167,155);
     border-radius: 50%;
+    /* Halve the circle */
     border-bottom-color: transparent;
     /*border-left-color: transparent;*/
+    /* Rotate the circle */
     transform: rotate(-45deg);
+    margin: -475px 0 0 313px;
+    position: absolute;
+    z-index: 2;
 }
-
 .rotated-half-circle-02 {
     width: 70px;
     height: 70px;
     border: 5px solid rgb(208, 80, 0);
     border-radius: 50%;
+    /* Halve the circle */
     border-bottom-color: transparent;
     /*border-left-color: transparent;*/
+    /* Rotate the circle */
     transform: rotate(45deg);
+    margin: -175px 0 0 313px;
+    position: absolute;
+    z-index: 2;
 }
-
 .rotated-half-circle-03 {
     width: 70px;
     height: 70px;
     border: 5px solid rgb(153, 4, 92);
     border-radius: 50%;
+    /* Halve the circle */
     border-bottom-color: transparent;
     /*border-left-color: transparent;*/
+    /* Rotate the circle */
     transform: rotate(-45deg);
+    margin: 96px 0 0 313px;
+    position: absolute;
+    z-index: 2;
 }
 
-/**************************** FORMACAO ***********************************/
-.formation-container {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-}
-
-.container-marketing {
-    margin: 0 120px;
-}
-
-.icon-formation {
-    width: 53px;
-}
-
-.formation-container > h3 {
-    color: #E6E6E6;
-    margin-block-start: 30px;
-    margin-block-end: 20px;
-}
-.formation-container > article > p {
-    color: #939393;
-    letter-spacing: normal;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-}
-
-/****************** HABILIDADES ********************************************/
