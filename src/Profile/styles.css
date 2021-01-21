@@ -1,4 +1,4 @@
-/******************* PRINCIPAL *******************************/
+/******************* SOBRE *******************************/
 .about-container {
     display: flex;
     flex-direction: column;
@@ -27,9 +27,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     align-content: center;
     padding: 15px;
     border-top: solid 1px #444;
+
+    justify-content: space-between;
 }
 
 .cont-desc-timeline {
@@ -40,12 +43,14 @@
 
 .content-icon {
     display: flex;
-    height: 200px;
-    width: 200px;
+    height: 201px;
+    width: 201px;
     margin-left: 10px;
+    padding-left: 2px;
+    padding-top: 2px;
     border-radius: 50%;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
-    background-color: #bde87b;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.45);
+    background-color: #f66a55;
 }
 
 .content-icon > img {
@@ -67,6 +72,7 @@
     border-radius: 10px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
     background-color: #E6E6E6;
+    border: solid 1px #f66a55;
 }
 
 /**************************** EXPERIENCIA ***********************************/
@@ -76,7 +82,7 @@
     flex-direction: column;
     align-self: flex-start;
     position: absolute;
-    height: 200%;
+    height: 130%;
     width: 7px;
     background-color: #49515e;
     border-radius: 20px;
@@ -126,7 +132,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 63vw;
+    width: 815px;
     position: relative;
     margin-bottom: 2em;
     z-index: 1;
@@ -139,20 +145,20 @@
 .card-timeline-1 {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    /*margin-left: 5%;*/
 }
 
 .card-timeline-2 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-right: 5%;
+    /*margin-right: 5%;*/
 }
 
 .card-timeline-3 {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    /*margin-left: 5%;*/
 }
 
 .container-header-card {
@@ -299,10 +305,11 @@
     display: flex;
     flex-direction: column;
     text-align: justify;
+    padding: 0 20px;
 }
 
 .container-marketing {
-    margin: 0 120px;
+    /*margin: 0 90px;*/
 }
 
 .icon-formation {
@@ -322,3 +329,41 @@
 }
 
 /****************** HABILIDADES ********************************************/
+
+.cont-desc-skill {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    /*border: solid 1px green;*/
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 200px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.icon-skill {
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+}
+
+.skill-container > h3 {
+    color: snow;
+    margin-block-start: 30px;
+    margin-block-end: 20px;
+}
+.skill-container > article > p {
+    color: #939393;
+    letter-spacing: normal;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
