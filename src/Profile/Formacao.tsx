@@ -25,7 +25,7 @@ function Formacao() {
 					<h3>MARKETING</h3>
 					<article>
 						<p><strong>Instituição</strong>: UNINTER </p>
-						<p><strong>Nível</strong>: Ensino Superior </p>
+						<p><strong>Nível</strong>: Graduação </p>
 						<p><strong>Conclusão</strong>: 2018 </p>
 					</article>
 				</span>
@@ -35,7 +35,7 @@ function Formacao() {
 					<h3>ANAL. E DES. DE SISTEMAS</h3>
 					<article>
 						<p><strong>Instituição</strong>: UNINTER </p>
-						<p><strong>Nível</strong>: Ensino Superior </p>
+						<p><strong>Nível</strong>: Graduação </p>
 						<p><strong>Conclusão</strong>: 2021 </p>
 					</article>
 				</span>

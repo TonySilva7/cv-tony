@@ -1,8 +1,29 @@
 import React from "react";
 import "./styles.css"
 import {Link} from "react-router-dom";
+import ImgHome from "./icon-home.png";
 
 function NavProfile() {
+
+	function removeClass(id: string) {
+		const navClass = document.querySelectorAll('nav ul li a');
+		// @ts-ignore
+		navClass.forEach(e => {
+			if(e.getAttribute('href') !== id) {
+				e.removeAttribute('class');
+			}
+
+		})
+	}
+
+	function activeMenu(event: any) {
+		event.preventDefault();
+		const element = event.target;
+		const id = element.getAttribute('href');
+		removeClass(id);
+		const classElm = element.classList;
+		classElm.toggle('linkAtivo');
+	}
 
 	function scrollToIdOnClick(event: any) {
 		event.preventDefault();
@@ -53,18 +74,18 @@ function NavProfile() {
 		<nav className="nav-container-profile">
 			<Link to="/">
 				<div className="logo-container-profile">
-					<h1 className="logo-text-profile"> TS </h1>
+					<img src={ImgHome} alt="imagem" className="icon-home"/>
 				</div>
 			</Link>
-				<li className="menu-container">
-					<ul onClick={scrollToIdOnClick}>
-						<a href="#sobre" > SOBRE </a>
-						<a href="#experiencia" > EXPERIÊNCIA </a>
-						<a href="#formacao" > FORMAÇÃO </a>
-						<a href="#habilidades" > HABILIDADES </a>
-						<a href="#contato" > CONTATO </a>
-					</ul>
+			<ul className="menu-container" onClick={scrollToIdOnClick} >
+				<li>
+					<a href="#sobre" className="linkAtivo" onClick={activeMenu} > SOBRE </a>
+					<a href="#experiencia" onClick={activeMenu}> EXPERIÊNCIA </a>
+					<a href="#formacao" onClick={activeMenu}> FORMAÇÃO </a>
+					<a href="#habilidades" onClick={activeMenu}> HABILIDADES </a>
+					<a href="#contato" onClick={activeMenu}> CONTATO </a>
 				</li>
+			</ul>
 		</nav>
 	)
 }

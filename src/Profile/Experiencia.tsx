@@ -91,7 +91,7 @@ function Experiencia() {
 									<article className="description-content">
 										<small><i>Agosto de 2010 - Agosto de 2018</i></small>
 										<p>
-											<strong>Cargo:</strong> Diretor da Escola de Música<br/><br/>
+											<strong>Cargo:</strong> Diretor da Escola de Música<br/>
 										</p>
 										<p>
 											<strong>Responsabilidades:</strong> Atuava como coordenador da escola de

@@ -82,3 +82,8 @@
     margin: 0 7px;
 }
 
+.social-media-content > svg {
+    width: 34px;
+    height: 34px;
+}
+

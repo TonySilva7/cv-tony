@@ -4,7 +4,6 @@ import "../Footer/styles.css"
 import {Link} from "react-router-dom";
 import Img from "./perfil.png";
 import Navbar from "../Navbar";
-import {ReactComponent as YouTubeIcon} from "../Footer/youtube.svg";
 import {ReactComponent as LinkedInIcon} from "../Footer/linkedin.svg";
 import {ReactComponent as InstagramIcon} from "../Footer/instagram.svg";
 
@@ -22,7 +21,7 @@ function Home() {
 						</h1>
 
 						<h3 className="home-subtitle">
-							Este é meu currículo! <br/> Vamos dar uma olhadinha!?
+							Seja bem vindo! <br/> Vamos dar uma olhadinha no meu perfil!?
 						</h3>
 
 						<Link to="/profile" className="home-btn-profile">Vamos!</Link>
@@ -32,17 +31,14 @@ function Home() {
 					<div className="home-img">
 						<img src={Img} alt="imagem"/>
 						<div className="social-media-container">
-							<a href="https://www.youtube.com/channel/UCBGR5w88kemCDyjfORFrZgQ"
-							   target="_new" className="social-media-content">
-								<YouTubeIcon/>
-							</a>
+	
 							<a href="https://www.linkedin.com/in/tony-sz-silva"
 							   target="_new" className="social-media-content">
 								<LinkedInIcon/>
 							</a>
 							<a href="http://www.instagram.com/tony.sz.silva"
 							   target="_new" className="social-media-content">
-								<InstagramIcon/>
+								<InstagramIcon className="icon-social-media"/>
 							</a>
 						</div>
 
