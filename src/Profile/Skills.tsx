@@ -8,11 +8,11 @@ import ImgScrum from './icon-scrum.png';
 import ImgGit from './icon-git.png';
 import ImgLang from './icon-language.png';
 
-function Habilidades() {
+function Skills() {
 
 	return (
 		<>
-		<div className="about-content" id="habilidades">
+		<div className="about-content" id="skills">
 			<h1 className="container-title">HABILIDADES</h1>
 
 			<section className="container-description cont-desc-skill cont-desc-skill-mob">
@@ -103,4 +103,4 @@ function Habilidades() {
 		</>
 	)
 }
-export default Habilidades;
+export default Skills;

@@ -3,11 +3,11 @@ import ImgBrushes from "./icon-brushes.png";
 import ImgCamera from "./icon-camera.png";
 import ImgLcd from "./icon-lcd.png";
 
-function Formacao() {
+function Formation() {
 
 	return (
 		<>
-		<div className="about-content" id="formacao">
+		<div className="about-content" id="formation">
 			<h1 className="container-title">FORMAÇÃO</h1>
 			<section className="container-description">
 				<span className="formation-container">
@@ -44,4 +44,4 @@ function Formacao() {
 		</>
 	)
 }
-export default Formacao;
+export default Formation;

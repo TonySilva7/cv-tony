@@ -3,12 +3,12 @@ import Mail from "./Mail";
 import ImgPhone from "./icon-phone.png";
 import ImgMail from "./icon-envelope.png";
 
-function Contato() {
+function Contact() {
 
 	return (
 		<>
 
-			<div className="about-content" id="contato">
+			<div className="about-content" id="contact">
 				<h1 className="container-title">CONTATO</h1>
 				<section className="container-description container-form-email">
 					<h1> Envie-me uma mensagem </h1>
@@ -38,4 +38,4 @@ function Contato() {
 	)
 }
 
-export default Contato;
+export default Contact;

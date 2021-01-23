@@ -3,10 +3,10 @@ import "./styles.css"
 import Footer from "../Footer";
 import NavProfile from "../Nav-profile";
 import About from "./About";
-import Experiencia from "./Experiencia";
-import Formacao from "./Formacao";
-import Habilidades from "./Habilidades";
-import Contato from "./Contato";
+import Experience from "./Experience";
+import Formation from "./Formation";
+import Skills from "./Skills";
+import Contact from "./Contact";
 
 function Profile() {
 	return (
@@ -14,10 +14,10 @@ function Profile() {
 			<NavProfile />
 			<div className="about-container">
 				<About />
-				<Experiencia />
-				<Formacao />
-				<Habilidades />
-				<Contato />
+				<Experience />
+				<Formation />
+				<Skills />
+				<Contact />
 			</div>
 			<Footer />
 		</>

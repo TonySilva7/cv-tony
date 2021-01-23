@@ -79,11 +79,11 @@ function NavProfile() {
 			</Link>
 			<ul className="menu-container" onClick={scrollToIdOnClick} >
 				<li>
-					<a href="#sobre" className="linkAtivo" onClick={activeMenu} > SOBRE </a>
-					<a href="#experiencia" onClick={activeMenu}> EXPERIÊNCIA </a>
-					<a href="#formacao" onClick={activeMenu}> FORMAÇÃO </a>
-					<a href="#habilidades" onClick={activeMenu}> HABILIDADES </a>
-					<a href="#contato" onClick={activeMenu}> CONTATO </a>
+					<a href="#about" className="linkAtivo" onClick={activeMenu} > SOBRE </a>
+					<a href="#experience" onClick={activeMenu}> EXPERIÊNCIA </a>
+					<a href="#formation" onClick={activeMenu}> FORMAÇÃO </a>
+					<a href="#skills" onClick={activeMenu}> HABILIDADES </a>
+					<a href="#contact" onClick={activeMenu}> CONTATO </a>
 				</li>
 			</ul>
 		</nav>

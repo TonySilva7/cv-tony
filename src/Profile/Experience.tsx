@@ -1,10 +1,10 @@
 import React from "react";
 
-function Experiencia() {
+function Experience() {
 
 	return (
 		<>
-			<div className="about-content" id="experiencia">
+			<div className="about-content" id="experience">
 				<h1 className="container-title">EXPERIÊNCIA</h1>
 				<section className="container-description cont-desc-timeline">
 
@@ -122,4 +122,4 @@ function Experiencia() {
 	)
 }
 
-export default Experiencia;
+export default Experience;
