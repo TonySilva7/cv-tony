@@ -31,7 +31,7 @@ function Home() {
 					<div className="home-img">
 						<img src={Img} alt="imagem"/>
 						<div className="social-media-container">
-	
+
 							<a href="https://www.linkedin.com/in/tony-sz-silva"
 							   target="_new" className="social-media-content">
 								<LinkedInIcon/>

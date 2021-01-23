@@ -62,4 +62,12 @@
     width: 30px;
 }
 
+/********** RESPONSIVIDADE *****************/
+@media screen and (max-device-width: 480px)  {
+    .menu-container {
+        margin: 0;
+        display: none;
+    }
+}
+
 

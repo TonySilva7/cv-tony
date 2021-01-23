@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css"
-import {ReactComponent as YouTubeIcon} from './youtube.svg'
 import {ReactComponent as LinkedInIcon} from './linkedin.svg'
 import {ReactComponent as InstagramIcon} from './instagram.svg'
 
@@ -10,9 +9,6 @@ function Footer() {
 		<footer className="main-footer">
 			By Tony | tony.deve7oper@gmail.com
 			<div className="footer-icons">
-				<a href="https://www.youtube.com/channel/UCBGR5w88kemCDyjfORFrZgQ" target="_new">
-					<YouTubeIcon/>
-				</a>
 				<a href="https://www.linkedin.com/in/tony-sz-silva" target="_new">
 					<LinkedInIcon/>
 				</a>

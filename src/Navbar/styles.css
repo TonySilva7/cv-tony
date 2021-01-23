@@ -18,3 +18,15 @@
     color: #788084;
 }
 
+@media(max-width: 700px)  {
+    .nav-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo-text {
+        margin-right: 0;
+    }
+
+}
+

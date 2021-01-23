@@ -15,7 +15,7 @@ function Habilidades() {
 		<div className="about-content" id="habilidades">
 			<h1 className="container-title">HABILIDADES</h1>
 
-			<section className="container-description cont-desc-skill">
+			<section className="container-description cont-desc-skill cont-desc-skill-mob">
 				<span className="skill-container">
 					<img src={ImgFront} alt="Imagem do perfil" className="icon-skill"/>
 					<h3>FRONT END</h3>

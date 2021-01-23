@@ -9,7 +9,7 @@ function NavProfile() {
 		const navClass = document.querySelectorAll('nav ul li a');
 		// @ts-ignore
 		navClass.forEach(e => {
-			if(e.getAttribute('href') !== id) {
+			if (e.getAttribute('href') !== id) {
 				e.removeAttribute('class');
 			}
 

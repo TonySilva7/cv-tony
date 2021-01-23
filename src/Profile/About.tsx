@@ -12,7 +12,7 @@ function About() {
 					<img src={Img} alt="Imagem do perfil"/>
 				</div>
 				<article className="content-article">
-					<div className="triangulo-para-esquerda triangulo-para-esquerda-0"></div>
+					<div className="triangulo-para-esquerda triangulo-para-esquerda-0 triangulo-para-cima"></div>
 					<p className="description-text">
 						Sempre tive garra para buscar a realização de meus objetivos.
 						Com motivação, expandi meu conhecimento, minha experiência e

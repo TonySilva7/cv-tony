@@ -11,12 +11,12 @@ function Experiencia() {
 					<div className="main-timeline-container">
 						<div className="content-cards">
 							<div className="card-timeline-1">
-								<div className="container-header-card">
+								<div className="container-header-card container-header-card-1">
 									<div className="title-card title-card-1">
 										<h6>Empresa:</h6>
 										<h4>BRADA CORRETORA</h4>
 									</div>
-									<div className="triangulo-para-direita triangulo-para-direita-1"></div>
+									<div className="triangulo-para-direita triangulo-para-direita-1 triangulo-para-cima"></div>
 								</div>
 								<div className="description-card-L description-card-01">
 									<article className="description-content">
@@ -46,7 +46,7 @@ function Experiencia() {
 						<div className="content-cards content-cards-direita">
 							<div className="card-timeline-2">
 								<div className="container-header-card">
-									<div className="triangulo-para-esquerda triangulo-para-esquerda-2"></div>
+									<div className="triangulo-para-esquerda triangulo-para-esquerda-2 triangulo-para-cima"></div>
 									<div className="title-card title-card-2">
 										<h6>Empresa:</h6>
 										<h4>COLÉGIO IATAI</h4>
@@ -80,12 +80,12 @@ function Experiencia() {
 
 						<div className="content-cards">
 							<div className="card-timeline-3">
-								<div className="container-header-card">
+								<div className="container-header-card container-header-card-1">
 									<div className="title-card title-card-3">
 										<h6>Empresa:</h6>
 										<h4>FACULDADE ADV. DA AMAZÔNIA</h4>
 									</div>
-									<div className="triangulo-para-direita triangulo-para-direita-3"></div>
+									<div className="triangulo-para-direita triangulo-para-direita-3 triangulo-para-cima"></div>
 								</div>
 								<div className="description-card-L description-card-03">
 									<article className="description-content">

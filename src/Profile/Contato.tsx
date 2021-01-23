@@ -31,6 +31,7 @@ function Contato() {
 					</div>
 
 					<Mail/>
+
 				</section>
 			</div>
 		</>
