@@ -27,8 +27,6 @@
     align-content: center;
     padding: 15px;
     border-top: solid 1px #444;
-
-    /*justify-content: space-between;*/
 }
 
 .cont-desc-timeline {
@@ -40,7 +38,6 @@
     display: flex;
     height: 182px;
     width: 182px;
-    /*margin-left: 10px;*/
     padding-left: 2px;
     padding-top: 2px;
     border-radius: 50%;
@@ -65,11 +62,9 @@
     align-self: center;
     line-height: 1.5;
     text-align: left;
-    /*letter-spacing: -0.015em;*/
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
-    /*background-color: #E6E6E6;*/
     border: solid 1px #f66a55;
 }
 
@@ -269,7 +264,6 @@
     border: 5px solid #f66a55;
     border-radius: 50%;
     border-bottom-color: transparent;
-    /*border-left-color: transparent;*/
     transform: rotate(-45deg);
 }
 
@@ -381,6 +375,7 @@
 
 .contact-content > h4{
     color: #efefef;
+    margin: 15px 0 5px 0;
 }
 .contact-content > article > p {
     color: #939393;
@@ -410,7 +405,6 @@ label {
 input[type=submit] {
     background: rgb(246,106,85);
     background: linear-gradient(24deg, rgba(246,106,85,1) 0%, rgba(161,69,55,1) 100%);
-    /*background-color: #f66a55;*/
     color: snow;
     padding: 12px 20px;
     border: none;
@@ -420,7 +414,6 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    /*background-color: #de5e4e;*/
     background: rgb(246,106,85);
     background: linear-gradient(24deg, rgb(210, 87, 71) 0%, rgb(125, 54, 42) 100%);
 }
@@ -561,7 +554,10 @@ input[type=submit]:hover {
     /**** CONTATO ***/
     .container-contact {
         flex-direction: column;
-        /*width: 100vw;*/
+    }
+
+    .icon-contact {
+        margin-top: 15px;
     }
 
 }

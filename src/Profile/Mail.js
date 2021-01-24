@@ -1,12 +1,13 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import {mailToken} from "../api";
 
 
 function Mail() {
 
     function sendEmail(e) {
         e.preventDefault();
-        emailjs.sendForm('service_gmail', 'cv-template', e.target, 'user_E8k06fbJfaQReLKUjJ3H5')
+        emailjs.sendForm('service_gmail', 'cv-template', e.target, `${mailToken}`)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
