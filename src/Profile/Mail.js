@@ -5,22 +5,17 @@ import {mailToken} from "../api";
 
 function Mail() {
 
-    let thanksMail = ""
-
     function sendEmail(e) {
         e.preventDefault();
         emailjs.sendForm('service_gmail', 'cv-template', e.target, `${mailToken}`)
             .then((result) => {
                 console.log(result.text);
-                if(result.text === "ok") {
-                    thanksMail =  "Mensagem enviada!";
-                } else {
-                    thanksMail = "Algo deu errado!"
-                }
             }, (error) => {
                 console.log(error.text);
             });
         e.target.reset()
+
+        document.getElementById("msg-email").innerHTML="Mensagem enviada :)";
     }
 
     return (
@@ -39,8 +34,8 @@ function Mail() {
                 <textarea id="message" name="message" placeholder="Escreva aqui sua mensagem..." className="textArea"></textarea>
 
                 <input type="submit" value="Enviar"/>
+                <div id="msg-email"></div>
             </form>
-            <h4>{`${thanksMail}`}</h4>
         </div>
     );
 }

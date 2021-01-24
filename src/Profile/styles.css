@@ -383,7 +383,7 @@
     margin-block-start: 0;
 }
 
-input[type=text], input[type=file], select, textarea {
+input[type=text], input[type=e-mail], input[type=file], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid rgba(246, 106, 85, 0.35);
@@ -422,6 +422,11 @@ input[type=submit]:hover {
     border-radius: 5px;
     padding: 20px;
     max-width: 600px;
+}
+
+#msg-email {
+    margin-top: 12px;
+    color: greenyellow;
 }
 
 /********************* RESPONSIVIDADE ***************************/
