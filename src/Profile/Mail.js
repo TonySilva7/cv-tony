@@ -7,7 +7,7 @@ function Mail() {
 
     function sendEmail(e) {
         e.preventDefault();
-        emailjs.sendForm('service_gmail', 'cv-template', e.target, `${mailToken}`)
+        emailjs.sendForm('service_gmail', 'cv-template', e.target, `'${mailToken}'`)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -15,7 +15,7 @@ function Mail() {
             });
         e.target.reset()
     }
-
+    
     return (
         <div className="container">
             <form onSubmit={sendEmail}>
