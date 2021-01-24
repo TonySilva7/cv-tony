@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css"
-import NavProfile from "../Nav-profile";
 
 function Navbar() {
 
