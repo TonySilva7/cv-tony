@@ -5,17 +5,24 @@ import {mailToken} from "../api";
 
 function Mail() {
 
+    let thanksMail = ""
+
     function sendEmail(e) {
         e.preventDefault();
-        emailjs.sendForm('service_gmail', 'cv-template', e.target, `'${mailToken}'`)
+        emailjs.sendForm('service_gmail', 'cv-template', e.target, `${mailToken}`)
             .then((result) => {
                 console.log(result.text);
+                if(result.text === "ok") {
+                    thanksMail =  "Mensagem enviada!";
+                } else {
+                    thanksMail = "Algo deu errado!"
+                }
             }, (error) => {
                 console.log(error.text);
             });
         e.target.reset()
     }
-    
+
     return (
         <div className="container">
             <form onSubmit={sendEmail}>
@@ -33,6 +40,7 @@ function Mail() {
 
                 <input type="submit" value="Enviar"/>
             </form>
+            <h4>{`${thanksMail}`}</h4>
         </div>
     );
 }
