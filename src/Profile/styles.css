@@ -58,11 +58,10 @@
 }
 
 .description-text {
-    display: flex;
-    align-self: center;
+    display: block;
     line-height: 1.5;
-    text-align: left;
-    padding: 25px;
+    text-align: justify;
+    padding: 0 16px;
     border-radius: 10px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
     border: solid 1px #f66a55;
@@ -474,6 +473,8 @@ input[type=submit]:hover {
     }
 
     .description-text {
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 0;
         width: 80%;
         text-align: center;

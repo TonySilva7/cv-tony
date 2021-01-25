@@ -13,15 +13,24 @@ function About() {
 				</div>
 				<article className="content-article">
 					<div className="triangulo-para-esquerda triangulo-para-esquerda-0 triangulo-para-cima"></div>
-					<p className="description-text">
-						Sempre tive garra para buscar a realização de meus objetivos.
-						Com motivação, expandi meu conhecimento, minha experiência e
-						cultivei relacionamentos sólidos, com respeito, bom humor e honestidade.
-						Com a experiência que consegui e algumas habilidades, estou confiante nas ideias
-						criativas e soluções de sucesso que eu trago para o meu trabalho, lançando mão
-						da ética, trabalho em equipe e inovação. Explore meu site para ler mais informações
-						sobre mim e entre em contato caso tenha qualquer dúvida.
-					</p>
+					<div className="description-text">
+						<p >
+							Sou graduado em Análise e Desenvolvimento de Sistemas e graduado também em Marketing.
+							Embora tenha trabalhado muitos anos na área de educação musical.
+						</p>
+						<p>
+							Sou apaixonado por conhecimento, tecnologia e inovação, por isso há quase 4 anos
+							decidi mudar completamente de profissão e explorar essa área que tem crescido
+							bastante nos últimos anos — tecnologia.
+						</p>
+						<p>
+							Aprendi a cultivar bons relacionamentos e respeitar as pessoas,
+							valorizando-as pelo ser humano que são. Trabalho em equipe e
+							me adapto bem às rápidas mudanças, “mergulho de cabeça” em tudo o que faço.
+							Em menos de um minutinho de leitura você encontrará mais detalhes abaixo.
+							Aguardo seu contato e ótima leitura!
+						</p>
+					</div>
 				</article>
 			</section>
 		</div>

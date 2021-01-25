@@ -20,17 +20,18 @@ function Experience() {
 								</div>
 								<div className="description-card-L description-card-01">
 									<article className="description-content">
-										<small><i>Fevereiro de 2006</i></small>
+										<small><i>Fevereiro de 2001</i></small>
 										<p>
-											<strong>Cargo:</strong> Auxiliar de Marketing
+											<strong>Cargo:</strong> Maestro da Orquestra
 										</p>
 										<p>
 											<strong>Responsabilidades:</strong>
-											<br/> - Gestão de Branding, <br/> - Relacionamento Com
-											Clientes, <br/> - Artes visuais.
+											<br/> - Regência da orquestra,
+											<br/> - Arranjos e adaptações,
+											<br/> - Apresentações.
 										</p>
 										<p>
-											<strong>Empregador:</strong> Alex Targino/ Brasília - DF
+											<strong>Empregador:</strong> PMA
 										</p>
 									</article>
 								</div>
@@ -38,7 +39,7 @@ function Experience() {
 							<div className="year-container year-container-left">
 								<div className="rotated-half-circle-01"></div>
 								<div className="year-1 year">
-									<h3 className="year-content">2006</h3>
+									<h3 className="year-content">2001</h3>
 								</div>
 							</div>
 						</div>
@@ -54,16 +55,15 @@ function Experience() {
 								</div>
 								<div className="description-card-R description-card-02">
 									<article className="description-content">
-										<small><i>Fevereiro 2007 - Dezembro de 2014</i></small>
+										<small><i>Fevereiro 2007 - junho de 2011</i></small>
 										<p>
-											<strong>Cargo:</strong> Gestão de Marketing | Web Design
+											<strong>Cargo:</strong> Gestão de Marketing | Coordenador da Escola de Música
 										</p>
-										<strong>Responsabilidades:</strong> Visando fidelizar alunos e conquistar novos,
-										minhas atribuições eram, por meios de estratégias, encantar os alunos quanto ao
-										relacionamento dos mesmos com a instituição, promovendo eventos, gerenciando o
-										site, dinamizando as redes sociais, bem como dirigir as atividades da escola de
-										música no tocante a alunos, professores, aulas, e, também era o regente do
-										coral.
+										<strong>Responsabilidades:</strong> Fidelizar alunos e conquistar novos.
+										Por meios de estratégias, encantar os alunos quanto ao
+										relacionamento dos mesmos com a instituição, com a promoção de eventos,
+										administração do site, redes sociais, além de dirigir as atividades da escola de
+										música.
 										<p>
 											<strong>Empregador:</strong> Rozivaldo Neto / Uruará - PA
 										</p>
@@ -89,13 +89,13 @@ function Experience() {
 								</div>
 								<div className="description-card-L description-card-03">
 									<article className="description-content">
-										<small><i>Agosto de 2010 - Agosto de 2018</i></small>
+										<small><i>Agosto de 2011 - Agosto de 2018</i></small>
 										<p>
-											<strong>Cargo:</strong> Diretor da Escola de Música<br/>
+											<strong>Cargo:</strong> Diretor da Escola de Música | Auxiliar de Marketing<br/>
 										</p>
 										<p>
-											<strong>Responsabilidades:</strong> Atuava como coordenador da escola de
-											música, regente do coral universitário e orquestra, coordenando as aulas,
+											<strong>Responsabilidades:</strong> Atuava como Diretor da escola de
+											música, regente do coral universitário, coordenando as aulas,
 											atividades e eventos, inclusive do campus. Acumulava também a função de assistente de
 											marketing no primeiro ano, cooperando na manutenção do site, na dinâmica das
 											redes sociais e edição de material gráfico e mídias.

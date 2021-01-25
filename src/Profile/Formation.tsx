@@ -7,9 +7,9 @@ function Formation() {
 
 	return (
 		<>
-		<div className="about-content" id="formation">
-			<h1 className="container-title">FORMAÇÃO</h1>
-			<section className="container-description">
+			<div className="about-content" id="formation">
+				<h1 className="container-title">FORMAÇÃO</h1>
+				<section className="container-description">
 				<span className="formation-container">
 					<img src={ImgBrushes} alt="Imagem do perfil" className="icon-formation"/>
 					<h3>ENSINO MÉDIO</h3>
@@ -20,7 +20,7 @@ function Formation() {
 					</article>
 				</span>
 
-				<span className="formation-container container-marketing">
+					<span className="formation-container container-marketing">
 					<img src={ImgCamera} alt="Imagem do perfil" className="icon-formation"/>
 					<h3>MARKETING</h3>
 					<article>
@@ -30,7 +30,7 @@ function Formation() {
 					</article>
 				</span>
 
-				<span className="formation-container">
+					<span className="formation-container">
 					<img src={ImgLcd} alt="Imagem do perfil" className="icon-formation"/>
 					<h3>ANAL. E DES. DE SISTEMAS</h3>
 					<article>
@@ -39,9 +39,10 @@ function Formation() {
 						<p><strong>Conclusão</strong>: 2021 </p>
 					</article>
 				</span>
-			</section>
-		</div>
+				</section>
+			</div>
 		</>
 	)
 }
+
 export default Formation;
