@@ -332,6 +332,21 @@
     padding-bottom: 30px;
 }
 
+.skill-container > article > p > a {
+    align-self: center;
+    color: #E6E6E6;
+    background: linear-gradient(24deg, rgb(169, 76, 180) 0%, rgb(87, 38, 127) 100%);
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.skill-container > article > p > a:hover {
+    transition: color ease-in-out;
+    background: linear-gradient(24deg, rgb(148, 68, 160) 0%, rgb(82, 34, 114) 100%);
+
+
+}
+
 .icon-skill {
     width: 100px;
     height: 100px;

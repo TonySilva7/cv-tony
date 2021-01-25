@@ -55,6 +55,10 @@ function Skills() {
 					<h3>GIT</h3>
 					<article>
 						<p><strong>Git Hub</strong></p>
+						<p>
+							<br/>
+							<a href="https://github.com/TonySilva7" target="_blank">Ver Perfil</a>
+						</p>
 					</article>
 				</span>
 
