@@ -57,7 +57,7 @@ function Skills() {
 						<p><strong>Git Hub</strong></p>
 						<p>
 							<br/>
-							<a href="https://github.com/TonySilva7" target="_blank">Ver Perfil</a>
+							<a href="https://github.com/TonySilva7" target="_blank" rel="noreferrer">Ver Perfil</a>
 						</p>
 					</article>
 				</span>
