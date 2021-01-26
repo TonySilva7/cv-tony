@@ -2,6 +2,8 @@ import React from "react";
 import ImgBrushes from "./icon-brushes.png";
 import ImgCamera from "./icon-camera.png";
 import ImgLcd from "./icon-lcd.png";
+import {ReactComponent as DownIcon} from "./icon-down.svg";
+import TonyCv from "./tonyCV.pdf"
 
 function Formation() {
 
@@ -40,6 +42,13 @@ function Formation() {
 					</article>
 				</span>
 				</section>
+				<div className="container-down">
+					<DownIcon className="icon-down"/>
+					<a href={TonyCv} target="_blank" rel="noreferrer" className="btn-down" download>
+						DOWNLOAD CV
+					</a>
+				</div>
+
 			</div>
 		</>
 	)
