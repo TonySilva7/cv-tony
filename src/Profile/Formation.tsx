@@ -44,7 +44,7 @@ function Formation() {
 				</section>
 				<div className="container-down">
 					<DownIcon className="icon-down"/>
-					<a href={TonyCv} target="_blank" rel="noreferrer" className="btn-down" download>
+					<a href={TonyCv} target="_blank" rel="noreferrer" className="btn-down" download="CV - José Antonio S da Silva.pdf">
 						DOWNLOAD CV
 					</a>
 				</div>
