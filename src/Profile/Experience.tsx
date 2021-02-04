@@ -14,7 +14,7 @@ function Experience() {
 								<div className="container-header-card container-header-card-1">
 									<div className="title-card title-card-1">
 										<h6>Empresa:</h6>
-										<h4>BRADA CORRETORA</h4>
+										<h4>CASA DA CULTURA - PMA</h4>
 									</div>
 									<div className="triangulo-para-direita triangulo-para-direita-1 triangulo-para-cima"></div>
 								</div>
