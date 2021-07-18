@@ -1,35 +1,35 @@
-import React from "react";
-import "./styles.css"
-import {Link} from "react-router-dom";
-import ImgHome from "./icon-home.png";
+import React, { SyntheticEvent } from 'react';
+import { Link } from 'react-router-dom';
+import ImgHome from './icon-home.png';
+import './styles.css';
 
 function NavProfile() {
-
 	function removeClass(id: string) {
 		const navClass = document.querySelectorAll('nav ul li a');
-		// @ts-ignore
-		navClass.forEach(e => {
+
+		navClass.forEach((e) => {
 			if (e.getAttribute('href') !== id) {
 				e.removeAttribute('class');
 			}
-
-		})
+		});
 	}
 
-	function activeMenu(event: any) {
+	function activeMenu(event: SyntheticEvent) {
 		event.preventDefault();
-		const element = event.target;
-		const id = element.getAttribute('href');
+		const element = event.target as HTMLLinkElement;
+		const id = element.getAttribute('href') as string;
 		removeClass(id);
 		const classElm = element.classList;
 		classElm.toggle('linkAtivo');
 	}
 
-	function scrollToIdOnClick(event: any) {
+	// BaseSyntheticEvent
+	function scrollToIdOnClick(event: SyntheticEvent) {
 		event.preventDefault();
-		const element = event.target;
-		const id = element.getAttribute('href');
-		const to = document.querySelector(id).offsetTop;
+		const element = event.target as HTMLLinkElement; // <a>
+		const id = element.getAttribute('href') as string; //#about
+		const elem = document.querySelector(id) as HTMLAnchorElement;
+		const to = elem.offsetTop; // 98
 
 		// window.scroll({
 		// 	top: to - 80,
@@ -54,9 +54,15 @@ function NavProfile() {
 		duration = typeof duration !== 'undefined' ? duration : 400;
 
 		// Easing function
-		const easeInOutQuart = (time: number, from: number, distance: number, duration: number) => {
-			if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
-			return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
+		const easeInOutQuart = (
+			time: number,
+			from: number,
+			distance: number,
+			duration: number
+		) => {
+			if ((time /= duration / 2) < 1)
+				return (distance / 2) * time * time * time * time + from;
+			return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
 		};
 
 		const timer = setInterval(() => {
@@ -71,23 +77,40 @@ function NavProfile() {
 	}
 
 	return (
-		<nav className="nav-container-profile">
-			<Link to="/">
-				<div className="logo-container-profile">
-					<img src={ImgHome} alt="imagem" className="icon-home"/>
+		<nav className='nav-container-profile'>
+			<Link to='/'>
+				<div className='logo-container-profile'>
+					<img src={ImgHome} alt='imagem' className='icon-home' />
 				</div>
 			</Link>
-			<ul className="menu-container" onClick={scrollToIdOnClick} >
+			<ul
+				className='menu-container'
+				onClick={(event) => scrollToIdOnClick(event)}>
 				<li>
-					<a href="#about" className="linkAtivo" onClick={activeMenu} > SOBRE </a>
-					<a href="#experience" onClick={activeMenu}> EXPERIÊNCIA </a>
-					<a href="#formation" onClick={activeMenu}> FORMAÇÃO </a>
-					<a href="#skills" onClick={activeMenu}> HABILIDADES </a>
-					<a href="#contact" onClick={activeMenu}> CONTATO </a>
+					<a href='#about' className='linkAtivo' onClick={activeMenu}>
+						{' '}
+						SOBRE{' '}
+					</a>
+					<a href='#experience' onClick={activeMenu}>
+						{' '}
+						EXPERIÊNCIA{' '}
+					</a>
+					<a href='#formation' onClick={activeMenu}>
+						{' '}
+						FORMAÇÃO{' '}
+					</a>
+					<a href='#skills' onClick={activeMenu}>
+						{' '}
+						HABILIDADES{' '}
+					</a>
+					<a href='#contact' onClick={activeMenu}>
+						{' '}
+						CONTATO{' '}
+					</a>
 				</li>
 			</ul>
 		</nav>
-	)
+	);
 }
 
 export default NavProfile;

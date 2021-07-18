@@ -1,606 +1,638 @@
 /******************* SOBRE *******************************/
 .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
 }
 
 .about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 70px;
-    width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 70px;
+	width: 70%;
 }
 
 .container-title {
-    text-align: justify;
-    color: #f66a55;
+	text-align: justify;
+	color: #f66a55;
 }
 
 .container-description {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    padding: 15px;
-    border-top: solid 1px #444;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: center;
+	padding: 15px;
+	border-top: solid 1px #444;
 }
 
 .cont-desc-timeline {
-    height: auto;
-    width: 100%;
+	height: auto;
+	width: 100%;
 }
 
 .content-icon {
-    display: flex;
-    height: 182px;
-    width: 182px;
-    padding-left: 2px;
-    padding-top: 2px;
-    border-radius: 50%;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.45);
-    background-color: #f66a55;
+	display: flex;
+	height: 182px;
+	width: 182px;
+	padding-left: 2px;
+	padding-top: 2px;
+	border-radius: 50%;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.45);
+	background-color: #f66a55;
 }
 
 .content-icon > img {
-    height: 180px;
-    width: 180px;
+	height: 180px;
+	width: 180px;
 }
 
 .content-article {
-    display: flex;
-    width: 70%;
-    margin-left: 20px;
-    color: #E6E6E6;
+	display: flex;
+	width: 70%;
+	margin-left: 20px;
+	color: #e6e6e6;
 }
 
 .description-text {
-    display: block;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 0 16px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
-    border: solid 1px #f66a55;
+	display: block;
+	line-height: 1.5;
+	text-align: justify;
+	padding: 0 16px;
+	border-radius: 10px;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
+	border: solid 1px #f66a55;
 }
 
 /**************************** EXPERIENCIA ***********************************/
 
 .line {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    position: absolute;
-    height: 130%;
-    width: 7px;
-    background-color: #49515e;
-    border-radius: 20px;
-    margin-left: 31.4%;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	position: absolute;
+	height: 130%;
+	width: 7px;
+	background-color: #49515e;
+	border-radius: 20px;
+	margin-left: 31.4%;
 }
 
 .year-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .year-container-right {
-    margin-right: 14px;
+	margin-right: 14px;
 }
 .year-container-left {
-    margin-left: 14px;
+	margin-left: 14px;
 }
 
 .year-content {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin: 17px 0 0 9px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	margin: 17px 0 0 9px;
 }
 
 .year {
-    display: flex;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin-top: -70px;
+	display: flex;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	margin-top: -70px;
 }
 .year-1 {
-    background-color: #f66a55;
+	background-color: #f66a55;
 }
 .year-2 {
-    background-color: #f66a55;
+	background-color: #f66a55;
 }
 .year-3 {
-    background-color: #f66a55;
+	background-color: #f66a55;
 }
 
 .content-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 815px;
-    position: relative;
-    margin-bottom: 2em;
-    z-index: 1;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 815px;
+	position: relative;
+	margin-bottom: 2em;
+	z-index: 1;
 }
 
 .content-cards-direita {
-    flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .card-timeline-1 {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .card-timeline-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 .card-timeline-3 {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .container-header-card {
-    display: flex;
+	display: flex;
 }
 
 .title-card {
-    display: flex;
-    flex-direction: column;
-    width: 338px;
-    height: 70px;
-    border-bottom: solid 2px #323436;
-    color: #E6E6E6;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
+	display: flex;
+	flex-direction: column;
+	width: 338px;
+	height: 70px;
+	border-bottom: solid 2px #323436;
+	color: #e6e6e6;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
 }
 
 .title-card-1 {
-    border: solid 1px #d6d6d6;
+	border: solid 1px #d6d6d6;
 }
 .title-card-2 {
-    border: solid 1px #d6d6d6;
+	border: solid 1px #d6d6d6;
 }
 .title-card-3 {
-    border: solid 1px #d6d6d6;
+	border: solid 1px #d6d6d6;
 }
 
 .title-card > h4 {
-    padding: 0;
-    margin: 0px 0 3px 14px;
-    color: snow;
+	padding: 0;
+	margin: 0px 0 3px 14px;
+	color: snow;
 }
 .title-card > h6 {
-    padding: 0;
-    margin: 14px 0 3px 14px;
-    color: #687487;
-    font-size: 14px;
+	padding: 0;
+	margin: 14px 0 3px 14px;
+	color: #687487;
+	font-size: 14px;
 }
 
 .triangulo-para-direita {
-    display: flex;
-    align-self: center;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
+	display: flex;
+	align-self: center;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
 }
 
 .triangulo-para-esquerda {
-    display: flex;
-    align-self: center;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
+	display: flex;
+	align-self: center;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
 }
 
 .triangulo-para-esquerda-0 {
-    border-right: 15px solid #f66a55;
+	border-right: 15px solid #f66a55;
 }
 
 .triangulo-para-direita-1 {
-    border-left: 15px solid #d6d6d6;
+	border-left: 15px solid #d6d6d6;
 }
 
 .triangulo-para-esquerda-2 {
-    border-right: 15px solid #d6d6d6;
+	border-right: 15px solid #d6d6d6;
 }
 
 .triangulo-para-direita-3 {
-    border-left: 15px solid #d6d6d6;
+	border-left: 15px solid #d6d6d6;
 }
 
 .description-card-L {
-    display: flex;
-    width: 340px;
-    height: auto;
-    padding-bottom: 12px;
-    border-radius: 0px 0px 8px 8px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
+	display: flex;
+	width: 340px;
+	height: auto;
+	padding-bottom: 12px;
+	border-radius: 0px 0px 8px 8px;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
 }
-.description-card-01{
-    background-color: #d6d6d6;
-}
-
-.description-card-02{
-    background-color: #d6d6d6;
+.description-card-01 {
+	background-color: #d6d6d6;
 }
 
-.description-card-03{
-    background-color: #d6d6d6;
+.description-card-02 {
+	background-color: #d6d6d6;
+}
+
+.description-card-03 {
+	background-color: #d6d6d6;
 }
 
 .description-content {
-    color: #323232;
-    margin-left: 14px;
-    padding-top: 12px;
-    padding-right: 12px;
+	color: #323232;
+	margin-left: 14px;
+	padding-top: 12px;
+	padding-right: 12px;
 }
 
 .description-card-R {
-    display: flex;
-    width: 340px;;
-    height: auto;
-    padding-bottom: 12px;
-    margin-left: 15px;
-    border-radius: 0px 0px 8px 8px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
+	display: flex;
+	width: 340px;
+	height: auto;
+	padding-bottom: 12px;
+	margin-left: 15px;
+	border-radius: 0px 0px 8px 8px;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
 }
 
 .rotated-half-circle-01 {
-    width: 70px;
-    height: 70px;
-    border: 5px solid #f66a55;
-    border-radius: 50%;
-    border-bottom-color: transparent;
-    transform: rotate(-45deg);
+	width: 70px;
+	height: 70px;
+	border: 5px solid #f66a55;
+	border-radius: 50%;
+	border-bottom-color: transparent;
+	transform: rotate(-45deg);
 }
 
 .rotated-half-circle-02 {
-    width: 70px;
-    height: 70px;
-    border: 5px solid #f66a55;
-    border-radius: 50%;
-    border-bottom-color: transparent;
-    transform: rotate(45deg);
+	width: 70px;
+	height: 70px;
+	border: 5px solid #f66a55;
+	border-radius: 50%;
+	border-bottom-color: transparent;
+	transform: rotate(45deg);
 }
 
 .rotated-half-circle-03 {
-    width: 70px;
-    height: 70px;
-    border: 5px solid #f66a55;
-    border-radius: 50%;
-    border-bottom-color: transparent;
-    transform: rotate(-45deg);
+	width: 70px;
+	height: 70px;
+	border: 5px solid #f66a55;
+	border-radius: 50%;
+	border-bottom-color: transparent;
+	transform: rotate(-45deg);
 }
 
 /**************************** FORMACAO ***********************************/
 .formation-container {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 0 20px;
 }
 
 .icon-formation {
-    width: 53px;
+	width: 53px;
 }
 
 .formation-container > h3 {
-    color: #E6E6E6;
-    margin-block-start: 30px;
-    margin-block-end: 20px;
+	color: #e6e6e6;
+	margin-block-start: 30px;
+	margin-block-end: 20px;
 }
 .formation-container > article > p {
-    color: #939393;
-    letter-spacing: normal;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+	color: #939393;
+	letter-spacing: normal;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
 }
 
 .btn-down {
-    align-self: center;
-    color: #E6E6E6;
-    background: linear-gradient(24deg, rgba(246,106,85,1) 0%, rgba(161,69,55,1) 100%);
-    padding: 10px;
-    border-radius: 0 7px 7px 0;
-    cursor: pointer;
+	align-self: center;
+	color: #e6e6e6;
+	background: linear-gradient(
+		24deg,
+		rgba(246, 106, 85, 1) 0%,
+		rgba(161, 69, 55, 1) 100%
+	);
+	padding: 10px;
+	border-radius: 0 7px 7px 0;
+	cursor: pointer;
 }
 .btn-down:hover {
-    transition: color ease-in-out;
-    background: linear-gradient(24deg, rgb(210, 87, 71) 0%, rgb(125, 54, 42) 100%);
+	transition: color ease-in-out;
+	background: linear-gradient(
+		24deg,
+		rgb(210, 87, 71) 0%,
+		rgb(125, 54, 42) 100%
+	);
 }
 
 .container-down {
-    margin-top: 15px;
-    display: flex;
+	margin-top: 15px;
+	display: flex;
 }
-.icon-down{
-    height: 32px;
-    padding: 5px;
-    border-radius: 7px 0 0 7px;
-    background: linear-gradient(24deg, rgb(255, 255, 255) 0%, rgb(219, 219, 219) 100%);
+.icon-down {
+	height: 32px;
+	padding: 5px;
+	border-radius: 7px 0 0 7px;
+	background: linear-gradient(
+		24deg,
+		rgb(255, 255, 255) 0%,
+		rgb(219, 219, 219) 100%
+	);
 }
 
 /****************** HABILIDADES ********************************************/
 .container-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 60vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 60vw;
 }
 
 .cont-desc-skill {
-    align-items: flex-start;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	align-items: flex-start;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .skill-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 200px;
-    height: auto;
-    padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 200px;
+	height: auto;
+	padding-bottom: 30px;
 }
 
 .icon-git-link-content {
-    align-self: center;
-    color: #E6E6E6;
-    background: linear-gradient(24deg, rgb(169, 76, 180) 0%, rgb(87, 38, 127) 100%);
-    padding: 10px;
-    border-radius: 0 7px 7px 0;
-    cursor: pointer;
+	align-self: center;
+	color: #e6e6e6;
+	background: linear-gradient(
+		24deg,
+		rgb(169, 76, 180) 0%,
+		rgb(87, 38, 127) 100%
+	);
+	padding: 10px;
+	border-radius: 0 7px 7px 0;
+	cursor: pointer;
 }
 .icon-git-link-content:hover {
-    transition: color ease-in-out;
-    background: linear-gradient(24deg, rgb(148, 68, 160) 0%, rgb(82, 34, 114) 100%);
+	transition: color ease-in-out;
+	background: linear-gradient(
+		24deg,
+		rgb(148, 68, 160) 0%,
+		rgb(82, 34, 114) 100%
+	);
 }
 
 .icon-skill {
-    width: 100px;
-    height: 100px;
-    border-radius: 5%;
+	width: 100px;
+	height: 100px;
+	border-radius: 5%;
 }
 
 .skill-container > h3 {
-    color: snow;
-    margin-block-start: 30px;
-    margin-block-end: 20px;
+	color: snow;
+	margin-block-start: 30px;
+	margin-block-end: 20px;
 }
 .skill-container > article > p {
-    color: #939393;
-    letter-spacing: normal;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+	color: #939393;
+	letter-spacing: normal;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
 }
 
 /***************** CONTATO **********************************/
 .container-form-email {
-    flex-direction: column;
+	flex-direction: column;
 }
 .container-form-email > h1 {
-    color: #efefef;
-    margin-block-start: 1rem;
-    margin-block-end: 2rem;
+	color: #efefef;
+	margin-block-start: 1rem;
+	margin-block-end: 2rem;
 }
 
 .icon-contact {
-    width: 35px;
+	width: 35px;
 }
 
 .contact-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0 20px;
 }
 
-.contact-content > h4{
-    color: #efefef;
-    margin: 15px 0 5px 0;
+.contact-content > h4 {
+	color: #efefef;
+	margin: 15px 0 5px 0;
 }
-.contact-content > article > p {
-    color: #939393;
-    margin-block-end: 6px;
-    margin-block-start: 0;
+.contact-content > article > p,
+a {
+	color: #939393;
+	margin-block-end: 6px;
+	margin-block-start: 0;
 }
 
-input[type=text], input[type=e-mail], input[type=file], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid rgba(246, 106, 85, 0.35);
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    background-color: #efefef;
-    font-size: 14px;
+input[type='text'],
+input[type='e-mail'],
+input[type='file'],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid rgba(246, 106, 85, 0.35);
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background-color: #efefef;
+	font-size: 14px;
 }
 
 label {
-    color: #404953;
-    font-weight: 600;
-    color: #f66a55;
+	color: #404953;
+	font-weight: 600;
+	color: #f66a55;
 }
 
-input[type=submit] {
-    background: rgb(246,106,85);
-    background: linear-gradient(24deg, rgba(246,106,85,1) 0%, rgba(161,69,55,1) 100%);
-    color: snow;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    font-size: 16px;
+input[type='submit'] {
+	background: rgb(246, 106, 85);
+	background: linear-gradient(
+		24deg,
+		rgba(246, 106, 85, 1) 0%,
+		rgba(161, 69, 55, 1) 100%
+	);
+	color: snow;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	font-size: 16px;
 }
 
-input[type=submit]:hover {
-    background: rgb(246,106,85);
-    background: linear-gradient(24deg, rgb(210, 87, 71) 0%, rgb(125, 54, 42) 100%);
+input[type='submit']:hover {
+	background: rgb(246, 106, 85);
+	background: linear-gradient(
+		24deg,
+		rgb(210, 87, 71) 0%,
+		rgb(125, 54, 42) 100%
+	);
 }
 
 .container {
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 600px;
+	border-radius: 5px;
+	padding: 20px;
+	max-width: 600px;
 }
 
 #msg-email {
-    margin-top: 12px;
-    color: greenyellow;
+	margin-top: 12px;
+	color: greenyellow;
 }
 
 /********************* RESPONSIVIDADE ***************************/
 
-@media screen and (max-device-width: 480px)  {
-    /**** About ***/
-    .about-content {
-        width: 85%;
-    }
+@media screen and (max-device-width: 480px) {
+	/**** About ***/
+	.about-content {
+		width: 85%;
+	}
 
-    .content-article {
-        flex-direction: column;
-    }
+	.content-article {
+		flex-direction: column;
+	}
 
-    .container-description {
-        flex-direction: column;
-        width: 100%;
-        align-self: center;
-    }
+	.container-description {
+		flex-direction: column;
+		width: 100%;
+		align-self: center;
+	}
 
-    .content-icon {
-        height: 120px;
-        width: 120px;
-        padding: 2px;
-        margin: 0;
-        align-self: center;
-        align-items: center;
-    }
-    .content-icon > img {
-        height: 120px;
-        width: 120px;
-    }
+	.content-icon {
+		height: 120px;
+		width: 120px;
+		padding: 2px;
+		margin: 0;
+		align-self: center;
+		align-items: center;
+	}
+	.content-icon > img {
+		height: 120px;
+		width: 120px;
+	}
 
-    .triangulo-para-cima {
-        width: 0;
-        height: 0;
-        border-left: 17px solid transparent;
-        border-right: 17px solid transparent;
-        border-bottom: 17px solid #f66a55;
-    }
+	.triangulo-para-cima {
+		width: 0;
+		height: 0;
+		border-left: 17px solid transparent;
+		border-right: 17px solid transparent;
+		border-bottom: 17px solid #f66a55;
+	}
 
-    .content-article {
-        width: 100%;
-        margin: 0;
-    }
+	.content-article {
+		width: 100%;
+		margin: 0;
+	}
 
-    .description-text {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        width: 80%;
-        text-align: center;
-    }
+	.description-text {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		width: 80%;
+		text-align: center;
+	}
 
-    /**** Experiencia ***/
-    .line {
-        margin-left: 41.5vw;
-        height: 175vh;
-    }
+	/**** Experiencia ***/
+	.line {
+		margin-left: 41.5vw;
+		height: 175vh;
+	}
 
-    .year-container {
-        margin: 10px 0 10px 0;
-    }
+	.year-container {
+		margin: 10px 0 10px 0;
+	}
 
-    .title-card {
-        width: 79.5vw;
-    }
+	.title-card {
+		width: 79.5vw;
+	}
 
-    .content-cards-direita {
-        flex-direction: row;
-    }
+	.content-cards-direita {
+		flex-direction: row;
+	}
 
-    .content-cards {
-        flex-direction: column-reverse;
-        width: 100%;
-    }
+	.content-cards {
+		flex-direction: column-reverse;
+		width: 100%;
+	}
 
-    .container-header-card {
-        display: flex;
-        flex-direction: column;
-    }
+	.container-header-card {
+		display: flex;
+		flex-direction: column;
+	}
 
-    .container-header-card-1 {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+	.container-header-card-1 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 
-    .card-timeline-1 {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-    }
+	.card-timeline-1 {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+	}
 
-    .description-card-01{
-        background-color: rgba(214, 214, 214, 0.87);
-    }
+	.description-card-01 {
+		background-color: rgba(214, 214, 214, 0.87);
+	}
 
-    .description-card-R {
-        margin: 0;
-        background-color: rgba(214, 214, 214, 0.87);
-        width: 80vw;
-    }
+	.description-card-R {
+		margin: 0;
+		background-color: rgba(214, 214, 214, 0.87);
+		width: 80vw;
+	}
 
-    .description-card-L {
-        margin: 0;
-        background-color: rgba(214, 214, 214, 0.87);
-        width: 80vw;
-    }
+	.description-card-L {
+		margin: 0;
+		background-color: rgba(214, 214, 214, 0.87);
+		width: 80vw;
+	}
 
-    /**** HABILIDADES ***/
-    .cont-desc-skill-mob {
-        flex-direction: row;
-    }
-    .skill-container {
-        align-items: center;
-        text-align: center;
-        width: 42vw;
-        margin-top: 20px;
-    }
+	/**** HABILIDADES ***/
+	.cont-desc-skill-mob {
+		flex-direction: row;
+	}
+	.skill-container {
+		align-items: center;
+		text-align: center;
+		width: 42vw;
+		margin-top: 20px;
+	}
 
-    .formation-container {
-        align-items: center;
-        margin-bottom: 25px;
-        text-align: center;
-    }
+	.formation-container {
+		align-items: center;
+		margin-bottom: 25px;
+		text-align: center;
+	}
 
-    .formation-container > h3 {
-        margin-block-start: 16px;
-        margin-block-end: 8px;
-    }
+	.formation-container > h3 {
+		margin-block-start: 16px;
+		margin-block-end: 8px;
+	}
 
-    /**** CONTATO ***/
-    .container-contact {
-        flex-direction: column;
-    }
+	/**** CONTATO ***/
+	.container-contact {
+		flex-direction: column;
+	}
 
-    .icon-contact {
-        margin-top: 15px;
-    }
-
+	.icon-contact {
+		margin-top: 15px;
+	}
 }
