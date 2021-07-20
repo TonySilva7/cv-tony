@@ -126,14 +126,14 @@ export const WrapPicture = styled.picture<{ myOpacity: number }>`
 		a:first-child > svg {
 			&:hover {
 				transform: rotate(10deg) scale(1.2);
-				fill: var(--dark-color);
+				fill: var(--light-color);
 			}
 		}
 
 		a:last-child > svg {
 			&:hover {
 				transform: rotate(-10deg) scale(1.2);
-				fill: var(--dark-color);
+				fill: var(--light-color);
 			}
 		}
 	}

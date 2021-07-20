@@ -4,9 +4,17 @@ import Timeline from '../Timeline';
 import { WrapExp } from './styles';
 
 function Experience() {
-	const [myOpacity, setMyOpacity] = useState<number>(0);
-	const [myMargin, setMyMargin] = useState<number>(100);
-	const [myScale, setMyScale] = useState<number>(0.5);
+	const [opcDL, setMyOpcDL] = useState<number>(0);
+	const [mrgDL, setMrgDL] = useState<number>(100);
+	const [sclDL, setSclDL] = useState<number>(0.5);
+
+	const [opcFA, setMyOpcFA] = useState<number>(0);
+	const [mrgFA, setMrgFA] = useState<number>(100);
+	const [sclFA, setSclFA] = useState<number>(0.5);
+
+	const [opcIT, setMyOpcIT] = useState<number>(0);
+	const [mrgIT, setMrgIT] = useState<number>(100);
+	const [sclIT, setSclIT] = useState<number>(0.5);
 
 	useLayoutEffect(() => {
 		setTimeout(() => {
@@ -18,10 +26,21 @@ function Experience() {
 
 	function handleScroll() {
 		const scroll: number = document.documentElement.scrollTop;
+		console.log(scroll);
 		if (scroll > 530) {
-			setMyOpacity(100);
-			setMyMargin(0);
-			setMyScale(1);
+			setMyOpcDL(100);
+			setMrgDL(0);
+			setSclDL(1);
+		}
+		if (scroll > 830) {
+			setMyOpcFA(100);
+			setMrgFA(0);
+			setSclFA(1);
+		}
+		if (scroll > 1100) {
+			setMyOpcIT(100);
+			setMrgIT(0);
+			setSclIT(1);
 		}
 	}
 
@@ -66,9 +85,15 @@ function Experience() {
 	return (
 		<WrapExp
 			id='experience'
-			myOpacity={myOpacity}
-			myMargin={myMargin}
-			myScale={myScale}>
+			opcDL={opcDL}
+			mrgDL={mrgDL}
+			sclDL={sclDL}
+			opcFA={opcFA}
+			mrgFA={mrgFA}
+			sclFA={sclFA}
+			opcIT={opcIT}
+			mrgIT={mrgIT}
+			sclIT={sclIT}>
 			<h1>EXPERIÊNCIA</h1>
 			<div>
 				<aside>
