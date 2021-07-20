@@ -1,27 +1,25 @@
-import React from "react";
-import "./styles.css"
-import Footer from "../Footer";
-import NavProfile from "../Nav-profile";
-import About from "./About";
-import Experience from "./Experience";
-import Formation from "./Formation";
-import Skills from "./Skills";
-import Contact from "./Contact";
+import React from 'react';
+import About from '../components/About';
+import Experience from '../components/Experience/';
+// import Contact from './Contact';
+// import Experience from './Experience';
+// import Formation from './Formation';
+// import Skills from './Skills';
+// import './styles.css';
 
 function Profile() {
 	return (
 		<>
-			<NavProfile />
-			<div className="about-container">
+			<div>
 				<About />
 				<Experience />
-				<Formation />
-				<Skills />
-				<Contact />
+				{/* <Experience /> */}
+				{/* <Formation /> */}
+				{/* <Skills /> */}
+				{/* <Contact /> */}
 			</div>
-			<Footer />
 		</>
-	)
+	);
 }
 
 export default Profile;

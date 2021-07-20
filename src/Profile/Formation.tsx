@@ -1,9 +1,9 @@
 import React from 'react';
-import ImgBrushes from './icon-brushes.png';
-import ImgCamera from './icon-camera.png';
-import { ReactComponent as DownIcon } from './icon-down.svg';
-import ImgLcd from './icon-lcd.png';
-import TonyCv from './tonyCV.pdf';
+import TonyCv from '../assets/files/tonyCV.pdf';
+import ImgBrushes from '../assets/img/icon-brushes.png';
+import ImgCamera from '../assets/img/icon-camera.png';
+import { ReactComponent as DownIcon } from '../assets/img/icon-down.svg';
+import ImgLcd from '../assets/img/icon-lcd.png';
 
 function Formation() {
 	return (

@@ -1,20 +1,14 @@
-import React from "react";
-import {BrowserRouter, Switch, Route} from "react-router-dom";
-import Profile from "./Profile";
-import Home from "./Home";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Home from './Home';
+import Profile from './Profile';
 
-function Routes() {
+function MyRoutes() {
 	return (
-		<BrowserRouter>
-			<Switch>
-				<Route path="/profile">
-					<Profile />
-				</Route>
-				<Route path="/">
-					<Home />
-				</Route>
-			</Switch>
-		</BrowserRouter>
-	)
+		<Switch>
+			<Route exact path='/' component={Home} />
+			<Route exact path='/profile' component={Profile} />
+		</Switch>
+	);
 }
-export default Routes;
+export default MyRoutes;

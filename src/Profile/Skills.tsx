@@ -1,13 +1,13 @@
 import React from 'react';
-import ImgAudio from './icon-audioedition.png';
-import ImgBack from './icon-backend.png';
-import ImgFront from './icon-frontend.png';
-import { ReactComponent as GitLink } from './icon-git-perfil.svg';
-import ImgGit from './icon-git.png';
-import ImgLang from './icon-language.png';
-import ImgVideo from './icon-makemove.png';
-import ImgScrum from './icon-scrum.png';
-import ImgWeb from './icon-webdesign.png';
+import ImgAudio from '../assets/img/icon-audioedition.png';
+import ImgBack from '../assets/img/icon-backend.png';
+import ImgFront from '../assets/img/icon-frontend.png';
+import { ReactComponent as GitLink } from '../assets/img/icon-git-perfil.svg';
+import ImgGit from '../assets/img/icon-git.png';
+import ImgLang from '../assets/img/icon-language.png';
+import ImgVideo from '../assets/img/icon-makemove.png';
+import ImgScrum from '../assets/img/icon-scrum.png';
+import ImgWeb from '../assets/img/icon-webdesign.png';
 
 function Skills() {
 	return (

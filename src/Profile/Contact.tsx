@@ -1,6 +1,6 @@
 import React from 'react';
-import ImgMail from './icon-envelope.png';
-import ImgPhone from './icon-phone.png';
+import ImgMail from '../assets/img/icon-envelope.png';
+import ImgPhone from '../assets/img/icon-phone.png';
 import Mail from './Mail';
 
 function Contact() {
