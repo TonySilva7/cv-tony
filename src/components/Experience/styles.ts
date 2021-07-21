@@ -1,18 +1,6 @@
 import styled from 'styled-components';
 
-export const WrapExp = styled.article<{
-	opcDL: number;
-	mrgDL: number;
-	sclDL: number;
-
-	opcFA: number;
-	mrgFA: number;
-	sclFA: number;
-
-	opcIT: number;
-	mrgIT: number;
-	sclIT: number;
-}>`
+export const WrapExp = styled.article`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -32,19 +20,13 @@ export const WrapExp = styled.article<{
 
 		& > aside:first-child {
 			& > section:first-child {
-				transition: var(--slow-animate);
-				opacity: ${(props) => `${props.opcDL}%`};
-				margin-right: ${(props) => `-${props.mrgDL}px`};
-				transform: scaleY(${(props) => `${props.sclDL}`});
+				/* transition: var(--slow-animate); */
 			}
 
 			& > section:last-child {
 				margin-top: 365px;
 
-				transition: var(--slow-animate);
-				opacity: ${(props) => `${props.opcIT}%`};
-				margin-right: ${(props) => `-${props.mrgIT}px`};
-				transform: scaleY(${(props) => `${props.sclIT}`});
+				/* transition: var(--slow-animate); */
 			}
 		}
 
@@ -52,10 +34,7 @@ export const WrapExp = styled.article<{
 			& > section:last-child {
 				margin-top: 350px;
 
-				transition: var(--slow-animate);
-				opacity: ${(props) => `${props.opcFA}%`};
-				margin-right: ${(props) => `-${props.mrgFA}px`};
-				transform: scaleY(${(props) => `${props.sclFA}`});
+				/* transition: var(--slow-animate); */
 			}
 		}
 	}

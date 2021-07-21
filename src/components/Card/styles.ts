@@ -1,9 +1,17 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
+export const Container = styled.section<{
+	opacity: number;
+	scale: number;
+	margin: number;
+}>`
 	display: flex;
 	align-items: flex-start;
 	position: relative;
+	transition: var(--slow-animate);
+	opacity: ${(props) => `${props.opacity}%`};
+	transform: scale(${(props) => props.scale})
+		translateX(${(props) => `${props.margin}px`});
 
 	& > div {
 		width: 350px;

@@ -8,11 +8,15 @@ interface dataCard {
 	desc: string[];
 	employer: string;
 	arrow?: boolean;
+	opacity: number;
+	margin: number;
+	scale: number;
 }
 
 export default function Card(info: dataCard) {
+	console.log('Log: ', info.opacity);
 	return (
-		<Container>
+		<Container opacity={info.opacity} scale={info.scale} margin={info.margin}>
 			{info.arrow && <span></span>}
 			<div>
 				<header>

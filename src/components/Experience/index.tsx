@@ -9,7 +9,7 @@ function Experience() {
 	const [sclDL, setSclDL] = useState<number>(0.5);
 
 	const [opcFA, setMyOpcFA] = useState<number>(0);
-	const [mrgFA, setMrgFA] = useState<number>(100);
+	const [mrgFA, setMrgFA] = useState<number>(-100);
 	const [sclFA, setSclFA] = useState<number>(0.5);
 
 	const [opcIT, setMyOpcIT] = useState<number>(0);
@@ -26,7 +26,6 @@ function Experience() {
 
 	function handleScroll() {
 		const scroll: number = document.documentElement.scrollTop;
-		console.log(scroll);
 		if (scroll > 530) {
 			setMyOpcDL(100);
 			setMrgDL(0);
@@ -83,17 +82,7 @@ function Experience() {
 	};
 
 	return (
-		<WrapExp
-			id='experience'
-			opcDL={opcDL}
-			mrgDL={mrgDL}
-			sclDL={sclDL}
-			opcFA={opcFA}
-			mrgFA={mrgFA}
-			sclFA={sclFA}
-			opcIT={opcIT}
-			mrgIT={mrgIT}
-			sclIT={sclIT}>
+		<WrapExp id='experience'>
 			<h1>EXPERIÊNCIA</h1>
 			<div>
 				<aside>
@@ -103,6 +92,9 @@ function Experience() {
 						position={devLife.position}
 						desc={devLife.desc}
 						employer={devLife.employer}
+						opacity={opcDL}
+						margin={mrgDL}
+						scale={sclDL}
 					/>
 					<Card
 						company={college.company}
@@ -110,6 +102,9 @@ function Experience() {
 						position={college.position}
 						desc={college.desc}
 						employer={college.employer}
+						opacity={opcIT}
+						margin={mrgIT}
+						scale={sclIT}
 					/>
 				</aside>
 
@@ -123,6 +118,9 @@ function Experience() {
 						desc={faama.desc}
 						employer={faama.employer}
 						arrow
+						opacity={opcFA}
+						margin={mrgFA}
+						scale={sclFA}
 					/>
 				</aside>
 			</div>
