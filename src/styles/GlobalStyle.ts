@@ -9,10 +9,12 @@ export const GlobalStyle = createGlobalStyle`
     --gray-color: #949494;
     --dark-color: #323232;
 
+    --gradient-gray: linear-gradient(196deg, rgb(244 244 244) 0%, rgba(154,154,154,1)100% );
     --degrade: linear-gradient( 196deg, rgb(218 92 92) 0%, rgba(170,67,67,1) 100% );
+    
     --slow-animate: all 600ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
     --fast-animate: all 400ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    --myShadow: 5px 5px 15px 5px #000000ad;
+    --my-shadow: 5px 5px 15px 5px #000000ad;
   }
 
   html, body {

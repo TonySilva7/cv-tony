@@ -9,7 +9,7 @@ export default function RedGradient() {
 	);
 }
 
-export function RedGradientHover() {
+export function GrayGradient() {
 	return (
 		<svg width='0' height='0'>
 			<linearGradient
@@ -20,7 +20,7 @@ export function RedGradientHover() {
 				y2='100%'
 			>
 				<stop stopColor='#ffffff' offset='0%' />
-				<stop stopColor='#c7c7c7' offset='100%' />
+				<stop stopColor='#b8b7b7' offset='100%' />
 			</linearGradient>
 		</svg>
 	);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaHome, FaWhatsapp } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
-import RedGradient, { RedGradientHover } from '../../styles/gradientSvg';
+import RedGradient, { GrayGradient } from '../../styles/gradientSvg';
 import { LinkScroll, LinkTo, NavContainer } from './styles';
 import './styles.css';
 
@@ -33,7 +33,7 @@ function NavProfile() {
 					<LinkTo to='/'>
 						<picture>
 							<RedGradient />
-							<RedGradientHover />
+							<GrayGradient />
 							<FaHome size={32} />
 							{/* <img src={ImgHome} alt='imagem' /> */}
 						</picture>

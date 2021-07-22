@@ -1,5 +1,6 @@
 import React, { ReactChild, ReactChildren } from 'react';
 import { FaChartLine, FaCode, FaSchool } from 'react-icons/fa';
+import { IoCloudDownloadOutline } from 'react-icons/io5';
 import tonyCv from '../../assets/files/tonyCV.pdf';
 import RedGradient from '../../styles/gradientSvg';
 import { MediaContent, WrapContainer, WrapMedia } from './styles';
@@ -60,7 +61,7 @@ function Courses(props: MediaProps) {
 // -------------------------------------
 function Graduation() {
 	return (
-		<WrapContainer>
+		<WrapContainer id='formation'>
 			<h1>FORMAÇÃO</h1>
 			<RedGradient />
 			<WrapMedia>
@@ -81,7 +82,10 @@ function Graduation() {
 				className='btn-down'
 				download='CV - José Antonio S da Silva.pdf'
 			>
-				DOWNLOAD CV
+				<span>
+					<IoCloudDownloadOutline size={24} />
+				</span>
+				<h1>DOWNLOAD CV</h1>
 			</a>
 		</WrapContainer>
 	);
