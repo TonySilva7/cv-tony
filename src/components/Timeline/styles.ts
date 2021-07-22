@@ -35,7 +35,7 @@ export const WrapCircle = styled.span<{ rotate: number; scale: number }>`
 		width: 70px;
 		height: 70px;
 		border-radius: 50%;
-		border: 5px solid #f66a55;
+		border: 5px solid var(--primary-color);
 		border-bottom-color: transparent;
 	}
 
@@ -48,7 +48,7 @@ export const WrapCircle = styled.span<{ rotate: number; scale: number }>`
 		height: 60px;
 		width: 60px;
 		border-radius: 50%;
-		background-color: #f66a55;
+		background-color: var(--primary-color);
 
 		transition: var(--slow-animate);
 		transform: scale(${(props) => props.scale}); // <<<<<;

@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary-color: #c35050;
     --secondary-color: #aa4343;
     --light-color: #f5f5f5;
-    --gray-color: #656565;
+    --gray-color: #949494;
     --dark-color: #323232;
 
     --degrade: linear-gradient( 196deg, rgb(218 92 92) 0%, rgba(170,67,67,1) 100% );

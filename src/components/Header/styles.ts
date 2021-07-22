@@ -39,11 +39,18 @@ export const NavContainer = styled.nav<{ justify: string }>`
 	& > a:nth-of-type(1) {
 		display: flex;
 		align-self: center;
-		color: var(--secondary-color);
-		transition: var(--fast-animate);
+		transition: var(--slow-animate);
+		color: var(--primary-color);
 
 		& > picture {
 			margin-left: 40px;
+			svg {
+				transition: all 600ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+				fill: url(#my-red-gradient);
+			}
+			svg:hover {
+				fill: url(#my-red-gradient-hover);
+			}
 		}
 
 		&:hover {

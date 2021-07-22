@@ -8,7 +8,7 @@ export const WrapContainer = styled.article`
 
 	h1 {
 		text-align: justify;
-		color: #f66a55;
+		color: var(--primary-color);
 	}
 `;
 
@@ -37,7 +37,7 @@ export const WrapSection = styled.section<{
 
 		border-radius: 50%;
 		box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.45);
-		border: solid 2px #f66a55;
+		border: solid 2px var(--primary-color);
 	}
 
 	& > main {
@@ -64,7 +64,7 @@ export const WrapSection = styled.section<{
 
 			border-left: 15px solid transparent;
 			border-right: 15px solid transparent;
-			border-bottom: 15px solid #f66a55;
+			border-bottom: 15px solid var(--primary-color);
 		}
 
 		article {
@@ -75,7 +75,7 @@ export const WrapSection = styled.section<{
 			padding: 0 16px;
 			border-radius: 10px;
 			box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.35);
-			border: solid 1px #f66a55;
+			border: solid 1px var(--primary-color);
 		}
 	}
 `;

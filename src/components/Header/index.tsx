@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaHome, FaWhatsapp } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
+import RedGradient, { RedGradientHover } from '../../styles/gradientSvg';
 import { LinkScroll, LinkTo, NavContainer } from './styles';
 import './styles.css';
 
@@ -22,7 +23,8 @@ function NavProfile() {
 				<a
 					href='https://wa.me/5581993235866?text=Oi...'
 					target='_blank'
-					rel='noreferrer'>
+					rel='noreferrer'
+				>
 					<FaWhatsapp size={28} />
 					<strong>(81) 9 9323 - 5866</strong>
 				</a>
@@ -30,6 +32,8 @@ function NavProfile() {
 				<>
 					<LinkTo to='/'>
 						<picture>
+							<RedGradient />
+							<RedGradientHover />
 							<FaHome size={32} />
 							{/* <img src={ImgHome} alt='imagem' /> */}
 						</picture>
@@ -42,7 +46,8 @@ function NavProfile() {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								duration={1000}>
+								duration={1000}
+							>
 								SOBRE
 							</LinkScroll>
 						</li>
@@ -53,7 +58,8 @@ function NavProfile() {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								duration={1000}>
+								duration={1000}
+							>
 								EXPERIÊNCIA
 							</LinkScroll>
 						</li>
@@ -64,7 +70,8 @@ function NavProfile() {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								duration={1000}>
+								duration={1000}
+							>
 								FORMAÇÃO
 							</LinkScroll>
 						</li>
@@ -75,7 +82,8 @@ function NavProfile() {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								duration={1000}>
+								duration={1000}
+							>
 								HABILIDADES
 							</LinkScroll>
 						</li>
@@ -86,7 +94,8 @@ function NavProfile() {
 								spy={true}
 								smooth={true}
 								offset={-70}
-								duration={1000}>
+								duration={1000}
+							>
 								CONTATO
 							</LinkScroll>
 						</li>

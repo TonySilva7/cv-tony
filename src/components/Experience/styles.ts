@@ -9,8 +9,7 @@ export const WrapExp = styled.article`
 
 	& > h1 {
 		text-align: justify;
-		color: #f66a55;
-		transition: all 300ms ease;
+		color: var(--primary-color);
 	}
 
 	& > div {
