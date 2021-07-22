@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Container } from './styles';
 
 interface dataCard {
@@ -11,12 +11,20 @@ interface dataCard {
 	opacity: number;
 	margin: number;
 	scale: number;
+	id: string;
 }
 
 export default function Card(info: dataCard) {
-	console.log('Log: ', info.opacity);
+	const sectionRef = useRef<HTMLMetaElement>(null);
+
 	return (
-		<Container opacity={info.opacity} scale={info.scale} margin={info.margin}>
+		<Container
+			ref={sectionRef}
+			opacity={info.opacity}
+			scale={info.scale}
+			margin={info.margin}
+			id={info.id}
+		>
 			{info.arrow && <span></span>}
 			<div>
 				<header>

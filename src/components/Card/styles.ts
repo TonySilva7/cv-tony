@@ -15,7 +15,6 @@ export const Container = styled.section<{
 
 	& > div {
 		width: 350px;
-		/* border: solid 1px greenyellow; */
 
 		header {
 			border: solid 1.5px var(--light-color);
