@@ -39,8 +39,8 @@ export const NavContainer = styled.nav<{ justify: string }>`
 	& > a:nth-of-type(1) {
 		display: flex;
 		align-self: center;
-		color: #da5c5c;
-		transition: all 0.3s ease;
+		color: var(--secondary-color);
+		transition: var(--fast-animate);
 
 		& > picture {
 			margin-left: 40px;

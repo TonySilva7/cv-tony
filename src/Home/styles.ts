@@ -39,7 +39,6 @@ export const WrapPresentation = styled.div<{
 		align-items: center;
 		justify-content: center;
 		position: relative;
-		transition: all 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 
 		border-radius: 50px;
 		height: 50px;
@@ -80,7 +79,7 @@ export const WrapPresentation = styled.div<{
 				rgb(244, 244, 244) 0%,
 				rgba(154, 154, 154, 1) 100%
 			);
-			transition: all 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+			transition: var(--fast-animate);
 		}
 
 		&:hover::before {
@@ -120,7 +119,7 @@ export const WrapPicture = styled.picture<{ myOpacity: number }>`
 			height: 2rem;
 			width: 2rem;
 			fill: #c35050;
-			transition: all 0.2s cubic-bezier(0.28, 1.01, 0.59, 1.66);
+			transition: var(--fast-animate);
 		}
 
 		a:first-child > svg {

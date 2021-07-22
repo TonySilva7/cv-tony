@@ -32,5 +32,6 @@ export const IconContainer = styled.div<{ myDisplay: string }>`
 
 	& > a > svg {
 		padding: 0 5px;
+		fill: var(--gray-color);
 	}
 `;
