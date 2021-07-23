@@ -5,10 +5,19 @@ export const WrapTimeLine = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	height: 800px;
+	height: 50rem;
 	position: relative;
 
-	/* border: solid 1px greenyellow; // <<<<<<<<<<<<< */
+	// -------- Mobile ----------------
+	@media screen and (max-width: 767px) {
+		position: absolute;
+
+		& > span:nth-of-type(2) {
+			margin-bottom: 4rem;
+		}
+
+		height: 74rem;
+	}
 `;
 
 export const WrapCircle = styled.span<{ rotate: number; scale: number }>`
@@ -58,6 +67,10 @@ export const WrapCircle = styled.span<{ rotate: number; scale: number }>`
 			color: var(--light-color);
 		}
 	}
+
+	// -------- Mobile ----------------
+	@media screen and (max-width: 767px) {
+	}
 `;
 
 export const WrapLine = styled.div<{ height: number }>`
@@ -65,7 +78,6 @@ export const WrapLine = styled.div<{ height: number }>`
 	position: absolute;
 	transition: all 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 
-	/* height: 100%; */
 	height: ${(props) => `${props.height}%`};
 	width: 7px;
 	background: linear-gradient(262deg, #f5f5f5 0%, #656565);

@@ -5,7 +5,7 @@ import Img from '../assets/img/profile1.png';
 import { WrapContainer, WrapPicture, WrapPresentation } from './styles';
 
 function Home() {
-	const [myMargin, setMyMargin] = useState<number>(-700);
+	const [myMargin, setMyMargin] = useState<number>(200);
 	const [myOpacity, setMyOpacity] = useState<number>(0);
 
 	setTimeout(() => {
@@ -29,7 +29,7 @@ function Home() {
 				</Link>
 			</WrapPresentation>
 
-			<WrapPicture myOpacity={myOpacity}>
+			<WrapPicture myMargin={myMargin} myOpacity={myOpacity}>
 				<img src={Img} alt='imagem' />
 				<div>
 					<a href='https://www.linkedin.com/in/tony-sz-silva' target='_new'>

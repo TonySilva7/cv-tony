@@ -26,6 +26,7 @@ export default function Card(info: dataCard) {
 			id={info.id}
 		>
 			{info.arrow && <span></span>}
+			<bdo></bdo>
 			<div>
 				<header>
 					<h1>Empresa:</h1>

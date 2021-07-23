@@ -11,6 +11,7 @@ export const NavContainer = styled.nav<{ justify: string }>`
 
 	height: 70px;
 	width: 100%;
+	top: 0;
 	background-color: rgba(40, 46, 49, 0.95);
 	border-bottom: solid 1px rgba(246, 106, 85, 0.36);
 	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);

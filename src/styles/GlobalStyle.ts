@@ -42,8 +42,10 @@ export const GlobalStyle = createGlobalStyle`
   #root {
     display: flex;
     flex-direction: column;
-    height: 100%;
     align-items: center;
-    box-sizing: border-box;
+    justify-content: center;
+
+    min-height: calc(100vh - 120px);
+
   }
 `;

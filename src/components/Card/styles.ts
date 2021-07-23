@@ -77,4 +77,26 @@ export const Container = styled.section<{
 	& > span:last-child {
 		border-left: 15px solid var(--light-color);
 	}
+
+	// -------- Mobile ----------------
+	@media screen and (max-width: 767px) {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 10rem;
+
+		& > span:first-child {
+			display: none;
+		}
+		& > span:last-child {
+			display: none;
+		}
+
+		& > bdo {
+			display: block;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-bottom: 15px solid pink;
+			/* margin-top: 20px; */
+		}
+	}
 `;

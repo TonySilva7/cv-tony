@@ -1,18 +1,33 @@
 import styled from 'styled-components';
 
 export const WrapContainer = styled.article`
+	// -------- Computer ----------------
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+
+	// -------- Mobile ----------------
+	@media screen and (max-width: 767px) {
+		flex-direction: column;
+	}
+
+	// -------- Tablets ----------------
+	@media screen and (min-width: 768px) and (max-width: 1023) {
+	}
 `;
 
 export const WrapPresentation = styled.div<{
 	myMargin: number;
 	myOpacity: number;
 }>`
+	// -------- Computer ----------------
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
 	transition: all 800ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-	margin-right: ${(props) => `${props.myMargin}px`};
+	transform: translateX(-${(props) => props.myMargin}px);
 	opacity: ${(props) => `${props.myOpacity}%`};
 
 	h1 {
@@ -87,9 +102,36 @@ export const WrapPresentation = styled.div<{
 			opacity: 100%;
 		}
 	}
+
+	// -------- Mobile ----------------
+	@media screen and (max-width: 767px) {
+		align-items: center;
+		justify-content: center;
+
+		h1 {
+			margin-top: 7rem;
+			font-size: 2.5rem;
+			line-height: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		h3 {
+			margin-top: 0;
+			text-align: center;
+			line-height: 2rem;
+		}
+	}
+
+	// -------- Tablets ----------------
+	@media screen and (min-width: 768px) and (max-width: 1023) {
+	}
 `;
 
-export const WrapPicture = styled.picture<{ myOpacity: number }>`
+export const WrapPicture = styled.picture<{
+	myMargin: number;
+	myOpacity: number;
+}>`
+	// -------- Computer ----------------
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -97,6 +139,7 @@ export const WrapPicture = styled.picture<{ myOpacity: number }>`
 
 	transition: all 800ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 	opacity: ${(props) => `${props.myOpacity}%`};
+	transform: translateX(${(props) => props.myMargin}px);
 
 	img {
 		height: 20rem;
@@ -135,5 +178,24 @@ export const WrapPicture = styled.picture<{ myOpacity: number }>`
 				fill: var(--light-color);
 			}
 		}
+	}
+
+	// -------- Mobile ----------------
+	@media screen and (max-width: 767px) {
+		align-items: center;
+		justify-content: center;
+
+		img {
+			height: 60%;
+			width: 60%;
+		}
+
+		div {
+			margin-bottom: 8rem;
+		}
+	}
+
+	// -------- Tablets ----------------
+	@media screen and (min-width: 768px) and (max-width: 1023) {
 	}
 `;

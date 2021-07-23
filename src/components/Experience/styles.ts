@@ -37,4 +37,38 @@ export const WrapExp = styled.article`
 			}
 		}
 	}
+
+	// -------- Mobile ----------------
+	@media screen and (max-width: 767px) {
+		& > div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+
+			& > aside {
+				/* position: absolute; */
+				z-index: 1;
+			}
+
+			& > aside:first-child {
+				& > section:first-child {
+					margin-top: 5rem;
+				}
+
+				& > section:last-child {
+					margin-top: 0;
+				}
+			}
+
+			& > aside:last-child {
+				& > section:last-child {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	// -------- Tablets ----------------
+	@media screen and (min-width: 768px) and (max-width: 1023) {
+	}
 `;
