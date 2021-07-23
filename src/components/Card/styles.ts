@@ -78,11 +78,27 @@ export const Container = styled.section<{
 		border-left: 15px solid var(--light-color);
 	}
 
+	// -------- Tablet ----------------
+	@media (min-width: 768px) and (max-width: 1023px) {
+		& > div {
+			width: 320px;
+		}
+	}
+
 	// -------- Mobile ----------------
 	@media screen and (max-width: 767px) {
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 10rem;
+
+		& > div {
+			header {
+				background-color: rgba(44, 51, 54, 0.98);
+			}
+
+			footer {
+				opacity: 96%;
+			}
+		}
 
 		& > span:first-child {
 			display: none;
@@ -95,8 +111,7 @@ export const Container = styled.section<{
 			display: block;
 			border-left: 15px solid transparent;
 			border-right: 15px solid transparent;
-			border-bottom: 15px solid pink;
-			/* margin-top: 20px; */
+			border-bottom: 15px solid var(--light-color);
 		}
 	}
 `;

@@ -3,20 +3,39 @@ import styled from 'styled-components';
 export const WrapTimeLine = styled.div`
 	display: flex;
 	flex-direction: column;
+	align-self: flex-start;
 	align-items: center;
-	justify-content: space-between;
-	height: 50rem;
-	position: relative;
+	height: 80%;
+	position: absolute;
+
+	& > span:nth-of-type(2) {
+		margin-top: 22.5rem;
+	}
+
+	& > span:nth-of-type(3) {
+		margin-top: 28.5rem;
+	}
 
 	// -------- Mobile ----------------
 	@media screen and (max-width: 767px) {
-		position: absolute;
-
 		& > span:nth-of-type(2) {
-			margin-bottom: 4rem;
+			margin-top: 25rem;
 		}
 
-		height: 74rem;
+		& > span:nth-of-type(3) {
+			margin-top: 31rem;
+		}
+	}
+
+	// -------- Tablet ----------------
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
+		& > span:nth-of-type(2) {
+			margin-top: 24rem;
+		}
+
+		& > span:nth-of-type(3) {
+			margin-top: 30.8rem;
+		}
 	}
 `;
 

@@ -115,6 +115,18 @@ function Experience(props: propsTop) {
 						id='devLife'
 					/>
 					<Card
+						company={faama.company}
+						period={faama.period}
+						position={faama.position}
+						desc={faama.desc}
+						employer={faama.employer}
+						arrow
+						opacity={opcFA}
+						margin={mrgFA}
+						scale={sclFA}
+						id='faama'
+					/>
+					<Card
 						company={college.company}
 						period={college.period}
 						position={college.position}
@@ -136,21 +148,6 @@ function Experience(props: propsTop) {
 					scaleIT={sclIT}
 					lineHeight={lineHeight}
 				/>
-
-				<aside>
-					<Card
-						company={faama.company}
-						period={faama.period}
-						position={faama.position}
-						desc={faama.desc}
-						employer={faama.employer}
-						arrow
-						opacity={opcFA}
-						margin={mrgFA}
-						scale={sclFA}
-						id='faama'
-					/>
-				</aside>
 			</div>
 		</WrapExp>
 	);
