@@ -22,11 +22,10 @@ export const WrapForm = styled.section<{ margin: number; opacity: number }>`
 	border-top: solid 1px #444;
 
 	address {
-		/* border: solid 1px greenyellow; */
-
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		flex-wrap: wrap;
 		width: 50%;
 		margin-bottom: 1.2rem;
 
@@ -166,5 +165,21 @@ export const WrapForm = styled.section<{ margin: number; opacity: number }>`
 				opacity: 100%;
 			}
 		}
+	}
+
+	//--------------
+	@media screen and (max-width: 767px) {
+		address {
+			& > div {
+				margin-bottom: 1.5rem;
+			}
+		}
+
+		form {
+			width: 90%;
+		}
+	}
+
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
 	}
 `;
