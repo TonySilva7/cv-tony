@@ -9,14 +9,6 @@ function NavProfile() {
 	const location = useLocation();
 	const isHome: boolean = location.pathname === '/';
 
-	// const divRef = useRef<HTMLDivElement>(null);
-	// const myClass = useRef<string>();
-
-	// const str = null != divRef.current ? divRef.current.className : '';
-
-	// const arr = str.split(' ');
-	// null != arr[1] ? (myClass.current = arr[1]) : (myClass.current = '');
-
 	return (
 		<NavContainer justify={isHome ? 'center' : 'space-between'}>
 			{isHome ? (

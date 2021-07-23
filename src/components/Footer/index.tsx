@@ -5,7 +5,7 @@ import { FooterContainer, IconContainer } from './styles';
 
 function Footer() {
 	const location = useLocation();
-	console.log(location.pathname);
+
 	const isProfile: boolean = location.pathname === '/profile';
 
 	return (

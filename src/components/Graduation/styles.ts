@@ -101,6 +101,7 @@ export const MediaContent = styled.section`
 		list-style: none;
 		padding-inline-start: 0px;
 		color: var(--light-color);
+		margin-block-start: 0em;
 
 		li {
 			padding-bottom: 0.2rem;

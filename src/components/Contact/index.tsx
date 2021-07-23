@@ -51,7 +51,11 @@ function Contact() {
 				<address>
 					<div>
 						<FaWhatsapp size={30} />
-						<a href='tel:(81)99323-5866'>
+						<a
+							href='https://wa.me/5581993235866?text=Oi...'
+							target='_blank'
+							rel='noreferrer'
+						>
 							<strong>(81)</strong> 9 9323 - 5866
 						</a>
 					</div>

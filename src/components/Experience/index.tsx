@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import Card from '../Card';
 import Timeline from '../Timeline';
 import { WrapExp } from './styles';
@@ -26,51 +26,55 @@ function Experience() {
 	const myHeight: number = window.screen.height;
 	const topWindow = Math.round(myHeight / 1.2);
 
-	// useLayoutEffect(() => {
-	function handleScroll() {
-		const faama = document.getElementById('faama');
-		const topF = faama !== null && faama.getBoundingClientRect().top;
-		const topFaama = topF && Math.round(topF);
+	useLayoutEffect(() => {
+		function handleScroll() {
+			const faama = document.getElementById('faama');
+			const topF = faama !== null && faama.getBoundingClientRect().top;
+			const topFaama = topF && Math.round(topF);
 
-		const iatai = document.getElementById('iatai');
-		const topI = iatai !== null && iatai.getBoundingClientRect().top;
-		const topIatai = topI && Math.round(topI);
+			const iatai = document.getElementById('iatai');
+			const topI = iatai !== null && iatai.getBoundingClientRect().top;
+			const topIatai = topI && Math.round(topI);
 
-		const devLife = document.getElementById('devLife');
-		const topD = devLife !== null && devLife.getBoundingClientRect().top;
-		const topDevLife = topD && Math.round(topD);
+			const devLife = document.getElementById('devLife');
+			const topD = devLife !== null && devLife.getBoundingClientRect().top;
+			const topDevLife = topD && Math.round(topD);
 
-		if (topDevLife <= topWindow) {
-			setOpcDL(100);
-			setMrgDL(0);
-			setSclDL(1);
+			if (topDevLife <= topWindow) {
+				setOpcDL(100);
+				setMrgDL(0);
+				setSclDL(1);
 
-			setRotateDL(98);
-			setTLine(33.33);
+				setRotateDL(98);
+				setTLine(33.33);
+			}
+			if (topFaama <= topWindow) {
+				setMyOpcFA(100);
+				setMrgFA(0);
+				setSclFA(1);
+
+				setRotateFA(-98);
+				setTLine(33.33 * 2);
+			}
+			if (topIatai <= topWindow) {
+				setMyOpcIT(100);
+				setMrgIT(0);
+				setSclIT(1);
+
+				setRotateIT(98);
+				setTLine(33.33 * 3);
+			}
 		}
-		if (topFaama <= topWindow) {
-			setMyOpcFA(100);
-			setMrgFA(0);
-			setSclFA(1);
 
-			setRotateFA(-98);
-			setTLine(33.33 * 2);
-		}
-		if (topIatai <= topWindow) {
-			setMyOpcIT(100);
-			setMrgIT(0);
-			setSclIT(1);
+		window.onscroll = () => {
+			handleScroll();
+		};
 
-			setRotateIT(98);
-			setTLine(33.33 * 3);
-		}
-	}
-	// }, [topWindow]);
+		return () => {
+			window.onscroll = null;
+		};
+	}, [topWindow]);
 	//.......................................
-
-	window.onscroll = () => {
-		handleScroll();
-	};
 
 	const devLife = {
 		company: 'DEVLIFE/Freelancer',
