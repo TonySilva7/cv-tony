@@ -20,6 +20,13 @@ export const WrapCards = styled.div`
 	flex-wrap: wrap;
 
 	border-top: solid 1px #444;
+
+	@media screen and (max-width: 767px) {
+		justify-content: center;
+	}
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
+		justify-content: center;
+	}
 `;
 
 export const ContentCards = styled.section<{

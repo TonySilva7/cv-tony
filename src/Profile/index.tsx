@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useState } from 'react';
 import About from '../components/About';
 import Experience from '../components/Experience/';
 import Graduation from '../components/Graduation';
+import Skills from '../components/Skills/Skills';
 import { WrapMain } from './styles';
 
 function Profile() {
@@ -97,8 +98,8 @@ function Profile() {
 				isDevLifeTop={isDevLifeTop}
 			/>
 			<Graduation isTop={isShoolTop} />
-			{/* <Skills isSkillsTop={isSkillsTop} />
-			<Contact isContactTop={isContactTop} /> */}
+			<Skills isSkillsTop={isSkillsTop} />
+			{/* <Contact isContactTop={isContactTop} /> */}
 		</WrapMain>
 	);
 }
