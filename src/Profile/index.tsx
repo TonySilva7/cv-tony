@@ -14,6 +14,8 @@ function Profile() {
 
 	const [isShoolTop, setIsShoolTop] = useState<boolean>(false);
 
+	const [isSkillsTop, setIsSkillsTop] = useState<boolean>(false);
+
 	const [isFaamaTop, setIsFaamaTop] = useState<boolean>(false);
 	const [isIataiTop, setIsIataiTop] = useState<boolean>(false);
 	const [isDevLifeTop, setIsDevLifeTop] = useState<boolean>(false);
@@ -38,6 +40,11 @@ function Profile() {
 			const topS = school !== null && school.getBoundingClientRect().top;
 			const topSchool = topS && Math.round(topS);
 
+			// Skills
+			const skills = document.getElementById('cards-skills');
+			const topSk = skills !== null && skills.getBoundingClientRect().top;
+			const topSkills = topSk && Math.round(topSk);
+
 			// Experience
 			if (topFaama <= topWindow) {
 				setIsFaamaTop(true);
@@ -52,6 +59,11 @@ function Profile() {
 			// Graduation
 			if (topSchool <= topWindow) {
 				setIsShoolTop(true);
+			}
+
+			// Skills
+			if (topSkills <= topWindow) {
+				setIsSkillsTop(true);
 			}
 		}
 
@@ -75,7 +87,7 @@ function Profile() {
 				isDevLifeTop={isDevLifeTop}
 			/>
 			<Graduation isTop={isShoolTop} />
-			<Skills />
+			<Skills isSkillsTop={isSkillsTop} />
 			<Contact />
 		</WrapMain>
 	);

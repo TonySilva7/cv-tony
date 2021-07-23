@@ -22,12 +22,18 @@ export const WrapCards = styled.div`
 	border-top: solid 1px #444;
 `;
 
-export const ContentCards = styled.section`
+export const ContentCards = styled.section<{
+	opacScale: number;
+	delay: number;
+}>`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	width: 15rem;
+
+	transition: var(--slow-animate) ${(props) => props.delay}ms;
+	transform: scale(${(props) => props.opacScale});
 
 	margin-right: 1rem;
 
