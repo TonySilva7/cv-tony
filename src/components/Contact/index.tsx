@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com';
-import React, { BaseSyntheticEvent } from 'react';
+import React, { BaseSyntheticEvent, useEffect, useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { IoMailOutline } from 'react-icons/io5';
 import { mailToken } from '../../api';
@@ -43,11 +43,25 @@ function SendMail() {
 	);
 }
 
-function Contact() {
+interface propsTop {
+	isContactTop: boolean;
+}
+
+function Contact(props: propsTop) {
+	const [margin, setMargin] = useState<number>(250);
+	const [opc, setOpc] = useState<number>(0);
+
+	useEffect(() => {
+		if (props.isContactTop) {
+			setMargin(0);
+			setOpc(1);
+		}
+	}, [props.isContactTop]);
+
 	return (
 		<WrapContact id='contact'>
 			<h1>CONTATO</h1>
-			<WrapForm>
+			<WrapForm id='contact-form' margin={margin} opacity={opc}>
 				<address>
 					<div>
 						<FaWhatsapp size={30} />

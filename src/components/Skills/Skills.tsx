@@ -108,7 +108,7 @@ function Skills(props: propsSkills) {
 					title={backend.title}
 					desc={backend.desc}
 					opacScale={opacScale}
-					delay={400}
+					delay={250}
 				>
 					<FaServer size={50} />
 				</Cards>
@@ -116,7 +116,7 @@ function Skills(props: propsSkills) {
 					title={frameworks.title}
 					desc={frameworks.desc}
 					opacScale={opacScale}
-					delay={400 * 2}
+					delay={250 * 2}
 				>
 					<FaToolbox size={50} />
 				</Cards>
@@ -124,7 +124,7 @@ function Skills(props: propsSkills) {
 					title={dataBases.title}
 					desc={dataBases.desc}
 					opacScale={opacScale}
-					delay={400 * 3}
+					delay={250 * 3}
 				>
 					<FaDatabase size={50} />
 				</Cards>
@@ -132,7 +132,7 @@ function Skills(props: propsSkills) {
 					title={webDesign.title}
 					desc={webDesign.desc}
 					opacScale={opacScale}
-					delay={400 * 4}
+					delay={250 * 4}
 				>
 					<FaPalette size={50} />
 				</Cards>
@@ -140,7 +140,7 @@ function Skills(props: propsSkills) {
 					title={git.title}
 					desc={git.desc}
 					opacScale={opacScale}
-					delay={400 * 5}
+					delay={250 * 5}
 				>
 					<FaCodeBranch size={50} />
 				</Cards>
@@ -148,7 +148,7 @@ function Skills(props: propsSkills) {
 					title={methodos.title}
 					desc={methodos.desc}
 					opacScale={opacScale}
-					delay={400 * 6}
+					delay={250 * 6}
 				>
 					<FaTachometerAlt size={50} />
 				</Cards>
@@ -156,7 +156,7 @@ function Skills(props: propsSkills) {
 					title={language.title}
 					desc={language.desc}
 					opacScale={opacScale}
-					delay={400 * 7}
+					delay={250 * 7}
 				>
 					<FaLanguage size={50} />
 				</Cards>

@@ -12,13 +12,15 @@ function Profile() {
 	const myHeight: number = window.screen.height;
 	const topWindow = Math.round(myHeight / 1.2);
 
+	const [isFaamaTop, setIsFaamaTop] = useState<boolean>(false);
+	const [isIataiTop, setIsIataiTop] = useState<boolean>(false);
+	const [isDevLifeTop, setIsDevLifeTop] = useState<boolean>(false);
+
 	const [isShoolTop, setIsShoolTop] = useState<boolean>(false);
 
 	const [isSkillsTop, setIsSkillsTop] = useState<boolean>(false);
 
-	const [isFaamaTop, setIsFaamaTop] = useState<boolean>(false);
-	const [isIataiTop, setIsIataiTop] = useState<boolean>(false);
-	const [isDevLifeTop, setIsDevLifeTop] = useState<boolean>(false);
+	const [isContactTop, setIsContactTop] = useState<boolean>(false);
 
 	useLayoutEffect(() => {
 		function handleScroll() {
@@ -45,6 +47,11 @@ function Profile() {
 			const topSk = skills !== null && skills.getBoundingClientRect().top;
 			const topSkills = topSk && Math.round(topSk);
 
+			// Contact
+			const contact = document.getElementById('contact-form');
+			const topC = contact !== null && contact.getBoundingClientRect().top;
+			const topContact = topC && Math.round(topC + 200); // <<<< atenção
+
 			// Experience
 			if (topFaama <= topWindow) {
 				setIsFaamaTop(true);
@@ -64,6 +71,11 @@ function Profile() {
 			// Skills
 			if (topSkills <= topWindow) {
 				setIsSkillsTop(true);
+			}
+
+			// Contact
+			if (topContact <= topWindow) {
+				setIsContactTop(true);
 			}
 		}
 
@@ -88,7 +100,7 @@ function Profile() {
 			/>
 			<Graduation isTop={isShoolTop} />
 			<Skills isSkillsTop={isSkillsTop} />
-			<Contact />
+			<Contact isContactTop={isContactTop} />
 		</WrapMain>
 	);
 }

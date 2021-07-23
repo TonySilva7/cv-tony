@@ -12,7 +12,7 @@ export const WrapContact = styled.article`
 	}
 `;
 
-export const WrapForm = styled.section`
+export const WrapForm = styled.section<{ margin: number; opacity: number }>`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -76,9 +76,22 @@ export const WrapForm = styled.section`
 			color: #444;
 			box-shadow: inset 2px 2px 8px 2px #2c34364a;
 
+			transition: var(--slow-animate);
+			opacity: ${(props) => props.opacity};
+
 			&:focus {
 				border: solid 1px var(--primary-color);
 			}
+		}
+
+		input:nth-of-type(1) {
+			transform: translateX(-${(props) => props.margin}px);
+		}
+		input:nth-of-type(2) {
+			transform: translateX(${(props) => props.margin}px);
+		}
+		input:nth-of-type(3) {
+			transform: translateX(-${(props) => props.margin}px);
 		}
 
 		textarea {
