@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import '../../styles/gradientSvg.svg';
 
 export const WrapContainer = styled.article`
 	display: flex;
@@ -77,8 +76,18 @@ export const WrapMedia = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
+
 	width: 100%;
 	border-top: solid 1px #444;
+
+	@media screen and (max-width: 767px) {
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
+		justify-content: space-evenly;
+	}
 `;
 
 export const MediaContent = styled.section<{ opcScl: number; margin: number }>`
