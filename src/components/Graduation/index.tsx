@@ -1,4 +1,4 @@
-import React, { ReactChild, ReactChildren } from 'react';
+import React, { ReactChild, ReactChildren, useEffect, useState } from 'react';
 import { FaChartLine, FaCode, FaSchool } from 'react-icons/fa';
 import { IoCloudDownloadOutline } from 'react-icons/io5';
 import tonyCv from '../../assets/files/tonyCV.pdf';
@@ -6,9 +6,12 @@ import RedGradient from '../../styles/gradientSvg';
 import { MediaContent, WrapContainer, WrapMedia } from './styles';
 
 interface MediaProps {
+	id: string;
 	title: string;
 	desc: string[];
 	children: ReactChild | ReactChildren;
+	opcScl: number;
+	margin: number;
 }
 
 const school = {
@@ -27,7 +30,7 @@ const dev = {
 //------------------------------------
 function Courses(props: MediaProps) {
 	return (
-		<MediaContent>
+		<MediaContent id={props.id} opcScl={props.opcScl} margin={props.margin}>
 			{props.children}
 
 			<h1>{props.title}</h1>
@@ -59,19 +62,52 @@ function Courses(props: MediaProps) {
 }
 
 // -------------------------------------
-function Graduation() {
+
+interface propsTop {
+	isTop?: boolean;
+}
+
+function Graduation(props: propsTop) {
+	const [opacScale, setOpacScale] = useState<number>(0);
+	const [margin, setMargin] = useState<number>(500);
+
+	useEffect(() => {
+		if (props.isTop) {
+			setOpacScale(1);
+			setMargin(0);
+		}
+	}, [props.isTop]);
+
 	return (
 		<WrapContainer id='formation'>
 			<h1>FORMAÇÃO</h1>
 			<RedGradient />
 			<WrapMedia>
-				<Courses title={school.title} desc={school.desc}>
+				<Courses
+					id='school'
+					title={school.title}
+					desc={school.desc}
+					opcScl={opacScale}
+					margin={-margin}
+				>
 					<FaSchool size={45} />
 				</Courses>
-				<Courses title={marketing.title} desc={marketing.desc}>
+				<Courses
+					id='marketing'
+					title={marketing.title}
+					desc={marketing.desc}
+					opcScl={opacScale}
+					margin={0}
+				>
 					<FaChartLine size={45} />
 				</Courses>
-				<Courses title={dev.title} desc={dev.desc}>
+				<Courses
+					id='dev'
+					title={dev.title}
+					desc={dev.desc}
+					opcScl={opacScale}
+					margin={margin}
+				>
 					<FaCode size={45} />
 				</Courses>
 			</WrapMedia>

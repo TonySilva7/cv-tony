@@ -10,7 +10,7 @@ import {
 	FaToolbox,
 } from 'react-icons/fa';
 import { GrayGradient } from '../../styles/gradientSvg';
-import { ContentCards, WrapCards, WrapContainer } from './styles';
+import { ContentCards, WrapCards, WrapSkills } from './styles';
 
 interface dataCards {
 	children: ReactChild | ReactChildren;
@@ -79,10 +79,10 @@ const Cards = ({ ...props }: dataCards) => {
 
 function Skills() {
 	return (
-		<WrapContainer id='skills'>
+		<WrapSkills id='skills'>
 			<h1>HABILIDADES</h1>
 
-			<WrapCards>
+			<WrapCards id='cards-skills'>
 				<Cards title={frontend.title} desc={frontend.desc}>
 					<FaLaptopCode size={50} />
 				</Cards>
@@ -108,7 +108,7 @@ function Skills() {
 					<FaLanguage size={50} />
 				</Cards>
 			</WrapCards>
-		</WrapContainer>
+		</WrapSkills>
 	);
 }
 

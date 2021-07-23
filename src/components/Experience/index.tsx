@@ -3,7 +3,13 @@ import Card from '../Card';
 import Timeline from '../Timeline';
 import { WrapExp } from './styles';
 
-function Experience() {
+interface propsTop {
+	isFaamaTop: boolean;
+	isIataiTop: boolean;
+	isDevLifeTop: boolean;
+}
+
+function Experience(props: propsTop) {
 	const [lineHeight, setTLine] = useState<number>(0);
 
 	const [rotateDL, setRotateDL] = useState<number>(-98);
@@ -27,53 +33,31 @@ function Experience() {
 	const topWindow = Math.round(myHeight / 1.2);
 
 	useLayoutEffect(() => {
-		function handleScroll() {
-			const faama = document.getElementById('faama');
-			const topF = faama !== null && faama.getBoundingClientRect().top;
-			const topFaama = topF && Math.round(topF);
+		if (props.isDevLifeTop) {
+			setOpcDL(100);
+			setMrgDL(0);
+			setSclDL(1);
 
-			const iatai = document.getElementById('iatai');
-			const topI = iatai !== null && iatai.getBoundingClientRect().top;
-			const topIatai = topI && Math.round(topI);
-
-			const devLife = document.getElementById('devLife');
-			const topD = devLife !== null && devLife.getBoundingClientRect().top;
-			const topDevLife = topD && Math.round(topD);
-
-			if (topDevLife <= topWindow) {
-				setOpcDL(100);
-				setMrgDL(0);
-				setSclDL(1);
-
-				setRotateDL(98);
-				setTLine(33.33);
-			}
-			if (topFaama <= topWindow) {
-				setMyOpcFA(100);
-				setMrgFA(0);
-				setSclFA(1);
-
-				setRotateFA(-98);
-				setTLine(33.33 * 2);
-			}
-			if (topIatai <= topWindow) {
-				setMyOpcIT(100);
-				setMrgIT(0);
-				setSclIT(1);
-
-				setRotateIT(98);
-				setTLine(33.33 * 3);
-			}
+			setRotateDL(98);
+			setTLine(33.33);
 		}
+		if (props.isFaamaTop) {
+			setMyOpcFA(100);
+			setMrgFA(0);
+			setSclFA(1);
 
-		window.onscroll = () => {
-			handleScroll();
-		};
+			setRotateFA(-98);
+			setTLine(33.33 * 2);
+		}
+		if (props.isIataiTop) {
+			setMyOpcIT(100);
+			setMrgIT(0);
+			setSclIT(1);
 
-		return () => {
-			window.onscroll = null;
-		};
-	}, [topWindow]);
+			setRotateIT(98);
+			setTLine(33.33 * 3);
+		}
+	}, [props.isDevLifeTop, props.isFaamaTop, props.isIataiTop, topWindow]);
 	//.......................................
 
 	const devLife = {

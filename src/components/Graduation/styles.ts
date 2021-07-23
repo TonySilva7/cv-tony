@@ -81,11 +81,15 @@ export const WrapMedia = styled.div`
 	border-top: solid 1px #444;
 `;
 
-export const MediaContent = styled.section`
+export const MediaContent = styled.section<{ opcScl: number; margin: number }>`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	transition: var(--slow-animate);
+	opacity: ${(props) => props.opcScl};
+	transform: scale(${(props) => props.opcScl})
+		translateX(${(props) => `${props.margin}px`});
 
 	margin-top: 20px;
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const WrapContainer = styled.article`
+export const WrapSkills = styled.article`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
