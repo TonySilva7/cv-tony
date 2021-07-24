@@ -2,11 +2,17 @@ import { Link } from 'react-router-dom';
 import { Link as LRS } from 'react-scroll';
 import styled from 'styled-components';
 
-export const NavContainer = styled.nav<{ justify: string }>`
+export const NavContainer = styled.nav<{
+	justify: string;
+	display: string;
+	width: number;
+	height: number;
+	isClicked: boolean;
+}>`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: ${(props) => `${props.justify}`};
+	justify-content: ${(props) => props.justify};
 	position: fixed;
 
 	height: 70px;
@@ -74,11 +80,53 @@ export const NavContainer = styled.nav<{ justify: string }>`
 	}
 
 	/********** RESPONSIVIDADE *****************/
-	@media screen and (max-device-width: 480px) {
-		.menu-container {
-			margin: 0;
-			display: none;
+	@media screen and (max-width: 767px) {
+		flex-direction: column;
+		height: ${(props) => props.height}vh;
+		width: ${(props) => props.width}rem;
+		background: rgba(250, 250, 250, 0.96);
+		background: ${(props) =>
+			props.isClicked ? 'rgba(250, 250, 250, 0.96)' : 'none'};
+		align-self: flex-start;
+		align-items: flex-start;
+		justify-content: flex-start;
+		border-radius: 0 7px 7px 0;
+		overflow: hidden;
+		transition: all 300ms ease;
+		border-bottom: none;
+		box-shadow: none;
+
+		& > a:nth-of-type(1) {
+			display: ${(props) => props.display};
+			padding: 0;
+			align-self: unset;
+			margin-left: 1.6rem;
+			margin-top: 1rem;
+
+			svg {
+				fill: #fff;
+			}
+
+			picture {
+				margin: 0;
+			}
 		}
+
+		ul {
+			display: ${(props) => props.display};
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0 1rem;
+			width: 70%;
+			margin: 0;
+			margin-top: 1rem;
+
+			li {
+				color: #444;
+			}
+		}
+	}
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
 	}
 `;
 
@@ -113,17 +161,51 @@ export const LinkTo = styled(Link)`
 	}
 `;
 
-// export const Active = styled.div`
-// 	color: var(--primary-color);
-// 	position: absolute;
-// 	z-index: -100;
-// `;
+export const HamburgerMenu = styled.div<{ isClicked: boolean }>`
+	@media screen and (max-width: 767px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 45px;
+		height: 50px;
+		margin-top: 1rem;
+		margin-left: 1rem;
 
-// export const afterOpen = 'after-open';
-// export const Active = styled(LRS).attrs({
-// 	activeClass: afterOpen,
-// })`
-// 	.${afterOpen} {
-// 		border-bottom: solid 1px yellowgreen;
-// 	}
-// `;
+		& > div {
+			display: block;
+			position: relative;
+
+			height: 100%;
+			width: 100%;
+
+			& > span {
+				display: flex;
+				position: absolute;
+				height: 5px;
+				width: 33px;
+				background-color: ${(props) => (props.isClicked ? '#444' : '#fff')};
+				border-radius: 2px;
+				margin-left: 0.4rem;
+				transition: var(--fast-animate);
+			}
+
+			& > span:nth-child(1) {
+				top: ${(props) => (props.isClicked ? 1.3 : 0.5)}rem;
+				transform: rotate(${(props) => (props.isClicked ? -45 : 0)}deg);
+			}
+
+			& > span:nth-child(2) {
+				top: 1.3rem;
+				opacity: ${(props) => (props.isClicked ? 0 : 1)};
+			}
+
+			& > span:nth-child(3) {
+				top: 2.1rem;
+				top: 1.3rem;
+				transform: rotate(45deg);
+				top: ${(props) => (props.isClicked ? 1.3 : 2.1)}rem;
+				transform: rotate(${(props) => (props.isClicked ? 45 : 0)}deg);
+			}
+		}
+	}
+`;

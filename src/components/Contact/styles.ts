@@ -55,6 +55,7 @@ export const WrapForm = styled.section<{ margin: number; opacity: number }>`
 		align-items: flex-start;
 		justify-content: center;
 		width: 50%;
+		overflow-x: hidden;
 
 		label {
 			color: var(--gray-color);
