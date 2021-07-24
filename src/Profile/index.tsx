@@ -27,15 +27,15 @@ function Profile() {
 			// Experience
 			const faama = document.getElementById('faama');
 			const topF = faama !== null && faama.getBoundingClientRect().top;
-			const topFaama = topF && Math.round(topF);
+			const topFaama = topF && Math.round(topF - 200);
 
 			const iatai = document.getElementById('iatai');
 			const topI = iatai !== null && iatai.getBoundingClientRect().top;
-			const topIatai = topI && Math.round(topI);
+			const topIatai = topI && Math.round(topI - 200);
 
 			const devLife = document.getElementById('devLife');
 			const topD = devLife !== null && devLife.getBoundingClientRect().top;
-			const topDevLife = topD && Math.round(topD);
+			const topDevLife = topD && Math.round(topD - 200);
 
 			// Graduation
 			const school = document.getElementById('school');

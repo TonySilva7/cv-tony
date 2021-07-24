@@ -162,6 +162,8 @@ export const LinkTo = styled(Link)`
 `;
 
 export const HamburgerMenu = styled.div<{ isClicked: boolean }>`
+	display: none;
+
 	@media screen and (max-width: 767px) {
 		display: flex;
 		align-items: center;
