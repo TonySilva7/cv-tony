@@ -1,12 +1,12 @@
 import React, { ReactChild, ReactChildren, useEffect, useState } from 'react';
 import {
-	FaCodeBranch,
+	FaClipboardList,
 	FaDatabase,
 	FaLanguage,
 	FaLaptopCode,
 	FaPalette,
 	FaServer,
-	FaTachometerAlt,
+	FaSitemap,
 	FaToolbox,
 } from 'react-icons/fa';
 import { GrayGradient } from '../../styles/gradientSvg';
@@ -14,7 +14,7 @@ import { ContentCards, WrapCards, WrapSkills } from './styles';
 
 const frontend = {
 	title: 'FRONT END',
-	desc: ['HTML & CSS', 'TypeScript', 'JavaScript'],
+	desc: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
 };
 
 const backend = {
@@ -32,26 +32,32 @@ const webDesign = {
 	desc: ['Figma', 'Photoshop', 'Ilustrator'],
 };
 
-const git = {
-	title: 'VERSIONAMENTO',
-	desc: ['GIT', 'GitHub'],
-};
-
 const language = {
 	title: 'IDIOMAS',
 	desc: ['Inglês (intermediário)', 'Espanhol (intermediário)'],
 };
 
 const methodos = {
-	title: 'MÉTODOS ÁGEIS',
-	desc: ['SCRUM'],
+	title: 'PADRÕES E MÉTODOS',
+	desc: ['POO', 'Prog. Funcional', 'SOLID', 'SCRUM'],
 };
 
 const frameworks = {
 	title: 'FRAMEWORKS',
-	desc: ['SpringBoot', 'ReactJS', 'Express', 'Symfony', 'Bootstrap'],
+	desc: ['SpringBoot', 'ReactJS', 'NextJS', 'Symfony', 'Bootstrap'],
 };
-interface dataCards {
+
+const others = {
+	title: 'OUTROS',
+	desc: [
+		'Git & GitHub',
+		'Docker & Docker Compose',
+		'Redux & Redux Saga',
+		'Firebase',
+		'Styled Components',
+	],
+};
+interface DataCards {
 	children: ReactChild | ReactChildren;
 	title: string;
 	desc: string[];
@@ -59,7 +65,7 @@ interface dataCards {
 	delay: number;
 }
 
-const Cards = ({ ...props }: dataCards) => {
+const Cards = ({ ...props }: DataCards) => {
 	return (
 		<ContentCards opacScale={props.opacScale} delay={props.delay}>
 			<h1>{props.title}</h1>
@@ -78,11 +84,11 @@ const Cards = ({ ...props }: dataCards) => {
 	);
 };
 
-interface propsSkills {
+interface PropsSkills {
 	isSkillsTop: boolean;
 }
 
-function Skills(props: propsSkills) {
+function Skills(props: PropsSkills) {
 	const [opacScale, setOpacScale] = useState<number>(0);
 
 	useEffect(() => {
@@ -96,22 +102,14 @@ function Skills(props: propsSkills) {
 			<h1>HABILIDADES</h1>
 
 			<WrapCards id='cards-skills'>
-				<Cards
-					title={frontend.title}
-					desc={frontend.desc}
-					opacScale={opacScale}
-					delay={0}
-				>
+				<Cards title={frontend.title} desc={frontend.desc} opacScale={opacScale} delay={0}>
 					<FaLaptopCode size={50} />
 				</Cards>
-				<Cards
-					title={backend.title}
-					desc={backend.desc}
-					opacScale={opacScale}
-					delay={250}
-				>
-					<FaServer size={50} />
+
+				<Cards title={backend.title} desc={backend.desc} opacScale={opacScale} delay={250}>
+					<FaServer size={45} />
 				</Cards>
+
 				<Cards
 					title={frameworks.title}
 					desc={frameworks.desc}
@@ -120,44 +118,24 @@ function Skills(props: propsSkills) {
 				>
 					<FaToolbox size={50} />
 				</Cards>
-				<Cards
-					title={dataBases.title}
-					desc={dataBases.desc}
-					opacScale={opacScale}
-					delay={250 * 3}
-				>
+
+				<Cards title={others.title} desc={others.desc} opacScale={opacScale} delay={250 * 3}>
+					<FaClipboardList size={50} />
+				</Cards>
+
+				<Cards title={dataBases.title} desc={dataBases.desc} opacScale={opacScale} delay={250 * 4}>
 					<FaDatabase size={50} />
 				</Cards>
-				<Cards
-					title={webDesign.title}
-					desc={webDesign.desc}
-					opacScale={opacScale}
-					delay={250 * 4}
-				>
+
+				<Cards title={webDesign.title} desc={webDesign.desc} opacScale={opacScale} delay={250 * 5}>
 					<FaPalette size={50} />
 				</Cards>
-				<Cards
-					title={git.title}
-					desc={git.desc}
-					opacScale={opacScale}
-					delay={250 * 5}
-				>
-					<FaCodeBranch size={50} />
+
+				<Cards title={methodos.title} desc={methodos.desc} opacScale={opacScale} delay={250 * 6}>
+					<FaSitemap size={50} />
 				</Cards>
-				<Cards
-					title={methodos.title}
-					desc={methodos.desc}
-					opacScale={opacScale}
-					delay={250 * 6}
-				>
-					<FaTachometerAlt size={50} />
-				</Cards>
-				<Cards
-					title={language.title}
-					desc={language.desc}
-					opacScale={opacScale}
-					delay={250 * 7}
-				>
+
+				<Cards title={language.title} desc={language.desc} opacScale={opacScale} delay={250 * 7}>
 					<FaLanguage size={50} />
 				</Cards>
 			</WrapCards>

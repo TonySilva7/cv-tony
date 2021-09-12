@@ -62,13 +62,9 @@ function Experience(props: propsTop) {
 
 	const devLife = {
 		company: 'DEVLIFE/Freelancer',
-		period: 'Fevereiro de 2019 - Julho 2021',
+		period: 'Fevereiro de 2019 - atual',
 		position: 'Developer',
-		desc: [
-			'Desenvolvimento de WebApps,',
-			'Desenvolvimento de API’s Rest,',
-			'WebDesigner.',
-		],
+		desc: ['Desenvolvimento de WebApps,', 'Desenvolvimento de API’s Rest,', 'WebDesigner.'],
 		employer: 'Freelancer/DevLife - Recife',
 		arrow: true,
 	};
