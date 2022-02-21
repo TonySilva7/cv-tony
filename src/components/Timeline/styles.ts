@@ -9,21 +9,21 @@ export const WrapTimeLine = styled.div`
 	position: absolute;
 
 	& > span:nth-of-type(2) {
-		margin-top: 22.5rem;
+		margin-top: 21.5rem;
 	}
 
 	& > span:nth-of-type(3) {
-		margin-top: 28.5rem;
+		margin-top: 21.5rem;
 	}
 
 	// -------- Mobile ----------------
 	@media screen and (max-width: 767px) {
 		& > span:nth-of-type(2) {
-			margin-top: 25rem;
+			margin-top: 23.3rem;
 		}
 
 		& > span:nth-of-type(3) {
-			margin-top: 31rem;
+			margin-top: 24.2rem;
 		}
 	}
 
@@ -54,8 +54,7 @@ export const WrapCircle = styled.span<{ rotate: number; scale: number }>`
 		display: flex;
 		position: absolute;
 
-		transform: rotate(${(props) => `${props.rotate}deg`})
-			scale(${(props) => props.scale}); //<<<<
+		transform: rotate(${(props) => `${props.rotate}deg`}) scale(${(props) => props.scale}); //<<<<
 		/* transition: all 600ms cubic-bezier(0.18, 0.89, 0.32, 1.28); */
 		transition: var(--slow-animate);
 

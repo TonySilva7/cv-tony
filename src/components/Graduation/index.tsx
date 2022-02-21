@@ -16,15 +16,15 @@ interface MediaProps {
 
 const school = {
 	title: 'ENSINO MÉDIO',
-	desc: ['Dairce Pedrosa Torres', 'Ensino Médio', '1998, Dez'],
+	desc: ['Dairce Pedrosa Torres', 'Ensino Médio', 'Concluído'],
 };
 const marketing = {
 	title: 'MARKETING',
-	desc: ['UNINTER', 'Graduação', 'Nov, 2018'],
+	desc: ['UNINTER', 'Graduação', 'Formado'],
 };
 const dev = {
 	title: 'ANAL. E DES. DE SISTEMAS',
-	desc: ['UNINTER', 'Graduação', 'Ago, 2021'],
+	desc: ['UNINTER', 'Graduação', 'Formado'],
 };
 
 //------------------------------------
@@ -52,7 +52,7 @@ function Courses(props: MediaProps) {
 
 				<li>
 					<strong>
-						<span>&rsaquo;</span> Conclusão:
+						<span>&rsaquo;</span> Status:
 					</strong>
 					{props.desc[2]}
 				</li>

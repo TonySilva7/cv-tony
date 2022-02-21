@@ -42,13 +42,9 @@ function NavProfile() {
 			onClick={handleCheck}
 		>
 			{isHome ? (
-				<a
-					href='https://wa.me/5581993235866?text=Oi...'
-					target='_blank'
-					rel='noreferrer'
-				>
+				<a href='https://wa.me/5581993235866?text=Oi...' target='_blank' rel='noreferrer'>
 					<FaWhatsapp size={28} />
-					<strong>(81) 9 9323 - 5866</strong>
+					<strong>(43) 9 8863 - 1067</strong>
 				</a>
 			) : (
 				<>

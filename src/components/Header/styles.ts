@@ -53,7 +53,7 @@ export const NavContainer = styled.nav<{
 			margin-left: 40px;
 			svg {
 				transition: all 600ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-				fill: url(#my-red-gradient);
+				fill: var(--secondary-color);
 			}
 			svg:hover {
 				fill: url(#my-red-gradient-hover);
@@ -85,8 +85,7 @@ export const NavContainer = styled.nav<{
 		height: ${(props) => props.height}vh;
 		width: ${(props) => props.width}rem;
 		background: rgba(250, 250, 250, 0.96);
-		background: ${(props) =>
-			props.isClicked ? 'rgba(250, 250, 250, 0.96)' : 'none'};
+		background: ${(props) => (props.isClicked ? 'rgba(250, 250, 250, 0.96)' : 'none')};
 		align-self: flex-start;
 		align-items: flex-start;
 		justify-content: flex-start;

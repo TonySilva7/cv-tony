@@ -49,7 +49,7 @@ export const ContentCards = styled.section<{
 	}
 
 	& > svg {
-		fill: url(#my-red-gradient);
+		fill: var(--secondary-color);
 	}
 
 	& > ul {

@@ -60,11 +60,24 @@ function Experience(props: propsTop) {
 	}, [props.isDevLifeTop, props.isFaamaTop, props.isIataiTop, topWindow]);
 	//.......................................
 
+	const arpia = {
+		company: 'Arpia Tecnologia',
+		period: 'Outubro de 2021 - Emprego atual',
+		position: 'React Developer',
+		desc: ['Desenvolvimento de Sistemas,', 'Sustentação de Aplicações,'],
+		employer: 'Arpia Tecnologia - Uberlândia',
+		arrow: true,
+	};
+
 	const devLife = {
 		company: 'DEVLIFE/Freelancer',
-		period: 'Fevereiro de 2019 - atual',
-		position: 'Developer',
-		desc: ['Desenvolvimento de WebApps,', 'Desenvolvimento de API’s Rest,', 'WebDesigner.'],
+		period: 'Novembro de 2018 - Outubro de 2021',
+		position: 'Fontend/Backend Developer',
+		desc: [
+			'Desenvolvimento de WebApps,',
+			'Desenvolvimento de API’s Rest,',
+			'WebDesigner.',
+		],
 		employer: 'Freelancer/DevLife - Recife',
 		arrow: true,
 	};
@@ -72,50 +85,51 @@ function Experience(props: propsTop) {
 	const faama = {
 		company: 'FACULDADE ADV. DA AMAZÔNIA',
 		period: 'Agosto de 2011 - Agosto de 2018',
-		position: 'Diretor da Escola de Música | Auxiliar de Marketing',
+		position: 'Chefe de Departamento | Auxiliar de Marketing',
 		desc: [
 			'Assistente de marketing no primeiro ano, cooperando na manutenção do site, na dinâmica das redes sociais.',
-			'Administrar a escola de música, reger o coral universitário, coordenar as aulas, atividades e eventos,',
+			'Coordenava grupos de funcionários responsável pela Escola de Música.',
 		],
-		employer: 'Valdmiro Laurindo - Belém',
+		employer: 'FAAMA - Belém',
 		arrow: true,
 	};
 
-	const college = {
-		company: 'COLÉGIO ADVENTISTA',
-		period: 'Fevereiro 2007 - junho de 2011',
-		position: 'Marketing',
-		desc: [
-			'Fidelizar alunos e conquistar novos,',
-			'Gerenciar o relacionamento dos alunos com a instituição,',
-			'Promoção de eventos, administração do site, redes sociais,',
-		],
-		employer: 'Rozivaldo Neto - Uruará',
-		arrow: true,
-	};
+	// const college = {
+	// 	company: 'COLÉGIO ADVENTISTA',
+	// 	period: 'Fevereiro 2007 - junho de 2011',
+	// 	position: 'Marketing',
+	// 	desc: [
+	// 		'Fidelizar alunos e conquistar novos,',
+	// 		'Gerenciar o relacionamento dos alunos com a instituição,',
+	// 		'Promoção de eventos, administração do site, redes sociais,',
+	// 	],
+	// 	employer: 'Rozivaldo Neto - Uruará',
+	// 	arrow: true,
+	// };
 
 	return (
 		<WrapExp id='experience'>
 			<h1>EXPERIÊNCIA</h1>
 			<div>
 				<aside>
+					{/* Antigo DevLife */}
 					<Card
-						company={devLife.company}
-						period={devLife.period}
-						position={devLife.position}
-						desc={devLife.desc}
-						employer={devLife.employer}
+						company={arpia.company}
+						period={arpia.period}
+						position={arpia.position}
+						desc={arpia.desc}
+						employer={arpia.employer}
 						opacity={opcDL}
 						margin={mrgDL}
 						scale={sclDL}
 						id='devLife'
 					/>
 					<Card
-						company={faama.company}
-						period={faama.period}
-						position={faama.position}
-						desc={faama.desc}
-						employer={faama.employer}
+						company={devLife.company}
+						period={devLife.period}
+						position={devLife.position}
+						desc={devLife.desc}
+						employer={devLife.employer}
 						arrow
 						opacity={opcFA}
 						margin={mrgFA}
@@ -123,11 +137,11 @@ function Experience(props: propsTop) {
 						id='faama'
 					/>
 					<Card
-						company={college.company}
-						period={college.period}
-						position={college.position}
-						desc={college.desc}
-						employer={college.employer}
+						company={faama.company}
+						period={faama.period}
+						position={faama.position}
+						desc={faama.desc}
+						employer={faama.employer}
 						opacity={opcIT}
 						margin={mrgIT}
 						scale={sclIT}

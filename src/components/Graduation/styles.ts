@@ -103,7 +103,7 @@ export const MediaContent = styled.section<{ opcScl: number; margin: number }>`
 	margin-top: 20px;
 
 	& > svg {
-		fill: url(#my-red-gradient);
+		fill: var(--secondary-color);
 	}
 
 	h1 {
