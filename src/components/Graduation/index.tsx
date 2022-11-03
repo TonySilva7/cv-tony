@@ -1,6 +1,7 @@
-import React, { ReactChild, ReactChildren, useEffect, useState } from 'react';
-import { FaChartLine, FaCode, FaSchool } from 'react-icons/fa';
+import { ReactChild, ReactChildren, useEffect, useState } from 'react';
+import { FaChartLine, FaCode } from 'react-icons/fa';
 import { IoCloudDownloadOutline } from 'react-icons/io5';
+import { MdSchool } from 'react-icons/md';
 import tonyCv from '../../assets/files/tonyCV.pdf';
 import RedGradient from '../../styles/gradientSvg';
 import { MediaContent, WrapContainer, WrapMedia } from './styles';
@@ -26,35 +27,39 @@ const dev = {
 	title: 'ANAL. E DES. DE SISTEMAS',
 	desc: ['UNINTER', 'Graduação', 'Formado'],
 };
+const mba = {
+	title: 'MBA em ENGENHARIA DE SOFTWARE',
+	desc: ['UTFPR', 'Pós-Graduação', 'Formando'],
+};
 
 //------------------------------------
 function Courses(props: MediaProps) {
 	return (
-		<MediaContent id={props.id} opcScl={props.opcScl} margin={props.margin}>
-			{props.children}
+		<MediaContent id={ props.id } opcScl={ props.opcScl } margin={ props.margin }>
+			{ props.children }
 
-			<h1>{props.title}</h1>
+			<h1>{ props.title }</h1>
 
 			<ul>
 				<li>
 					<strong>
 						<span>&rsaquo;</span> Instituição:
 					</strong>
-					{props.desc[0]}
+					{ props.desc[0] }
 				</li>
 
 				<li>
 					<strong>
 						<span>&rsaquo;</span> Nível:
 					</strong>
-					{props.desc[1]}
+					{ props.desc[1] }
 				</li>
 
 				<li>
 					<strong>
 						<span>&rsaquo;</span> Status:
 					</strong>
-					{props.desc[2]}
+					{ props.desc[2] }
 				</li>
 			</ul>
 		</MediaContent>
@@ -85,41 +90,54 @@ function Graduation(props: propsTop) {
 			<WrapMedia>
 				<Courses
 					id='school'
-					title={school.title}
-					desc={school.desc}
-					opcScl={opacScale}
-					margin={-margin}
+					title={ school.title }
+					desc={ school.desc }
+					opcScl={ opacScale }
+					margin={ -margin }
 				>
-					<FaSchool size={45} />
+					<MdSchool size={ 45 } />
 				</Courses>
+
 				<Courses
 					id='marketing'
-					title={marketing.title}
-					desc={marketing.desc}
-					opcScl={opacScale}
-					margin={0}
+					title={ marketing.title }
+					desc={ marketing.desc }
+					opcScl={ opacScale }
+					margin={ 0 }
 				>
-					<FaChartLine size={45} />
+					<FaChartLine size={ 45 } />
 				</Courses>
+
 				<Courses
 					id='dev'
-					title={dev.title}
-					desc={dev.desc}
-					opcScl={opacScale}
-					margin={margin}
+					title={ dev.title }
+					desc={ dev.desc }
+					opcScl={ opacScale }
+					margin={ margin }
 				>
-					<FaCode size={45} />
+					<FaCode size={ 45 } />
 				</Courses>
+
+				<Courses
+					id='mba'
+					title={ mba.title }
+					desc={ mba.desc }
+					opcScl={ opacScale }
+					margin={ margin }
+				>
+					<FaCode size={ 45 } />
+				</Courses>
+
 			</WrapMedia>
 			<a
-				href={tonyCv}
+				href={ tonyCv }
 				target='_blank'
 				rel='noreferrer'
 				className='btn-down'
 				download='CV - José Antonio S da Silva.pdf'
 			>
 				<span>
-					<IoCloudDownloadOutline size={24} />
+					<IoCloudDownloadOutline size={ 24 } />
 				</span>
 				<h1>DOWNLOAD CV</h1>
 			</a>

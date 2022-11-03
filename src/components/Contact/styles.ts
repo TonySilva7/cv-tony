@@ -33,16 +33,22 @@ export const WrapForm = styled.section<{ margin: number; opacity: number }>`
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			cursor: pointer;
 
-			svg {
-				stroke: var(--primary-color);
-				fill: var(--primary-color);
-				margin-bottom: 5px;
-			}
-
-			a {
+			
+			& > a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				color: var(--light-color);
 				font-style: normal;
+
+				& > svg {
+					margin-right: 0.5rem;
+					stroke: var(--primary-color);
+					fill: var(--primary-color);
+					margin-bottom: 5px;
+				}
 			}
 		}
 	}

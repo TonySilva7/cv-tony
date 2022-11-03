@@ -57,9 +57,14 @@ export const ContentCards = styled.section<{
 		margin-block-start: 0.7em;
 
 		li {
+			display: flex;
 			list-style: none;
 			color: var(--light-color);
-			padding-bottom: 0.2rem;
+			padding: 0.3rem 0;
+
+			& > svg {
+				margin-right: 0.5rem;
+			}
 
 			strong {
 				color: var(--primary-color);

@@ -5,7 +5,14 @@ export const WrapExp = styled.article`
 	flex-direction: column;
 	align-items: center;
 	margin-top: 70px;
-	width: 100vw;
+
+	& > div[id='divider'] {
+		display: flex;
+		width: 100%;
+		height: 0.1rem;
+		background: #444;
+		margin: 0  0 2rem 0;
+	}
 
 	& > h1 {
 		text-align: justify;
@@ -17,9 +24,7 @@ export const WrapExp = styled.article`
 		align-items: center;
 		justify-content: center;
 		position: relative;
-
-		border-top: solid 1px #444;
-		padding-top: 20px;
+		min-width: 55rem;
 
 		@media screen and (max-width: 767px) {
 			width: 100%;
@@ -88,17 +93,17 @@ export const WrapExp = styled.article`
 
 			& > aside {
 				& > section:nth-of-type(1) {
-					margin-top: 5.5rem;
+					margin-top: 8rem;
 					align-self: unset;
 				}
 
 				& > section:nth-of-type(2) {
-					margin-top: 8rem;
+					margin-top: 10rem;
 					align-self: unset;
 				}
 
 				& > section:nth-of-type(3) {
-					margin-top: 8rem;
+					margin-top: 13rem;
 					align-self: unset;
 				}
 			}

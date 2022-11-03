@@ -7,6 +7,7 @@ export const WrapTimeLine = styled.div`
 	align-items: center;
 	height: 80%;
 	position: absolute;
+	top: 3rem;
 
 	& > span:nth-of-type(2) {
 		margin-top: 21.5rem;
@@ -50,6 +51,7 @@ export const WrapCircle = styled.span<{ rotate: number; scale: number }>`
 	width: 75px;
 	height: 75px;
 
+	
 	& > div:first-child {
 		display: flex;
 		position: absolute;
@@ -58,12 +60,14 @@ export const WrapCircle = styled.span<{ rotate: number; scale: number }>`
 		/* transition: all 600ms cubic-bezier(0.18, 0.89, 0.32, 1.28); */
 		transition: var(--slow-animate);
 
-		top: 0;
+		top: -3.5rem;
 		width: 70px;
 		height: 70px;
 		border-radius: 50%;
 		border: 5px solid var(--primary-color);
 		border-bottom-color: transparent;
+
+
 	}
 
 	& > div:last-child {
@@ -71,7 +75,7 @@ export const WrapCircle = styled.span<{ rotate: number; scale: number }>`
 		align-items: center;
 		justify-content: center;
 		position: absolute;
-		bottom: 5px;
+		bottom: 1.3rem;
 		height: 60px;
 		width: 60px;
 		border-radius: 50%;
@@ -88,6 +92,9 @@ export const WrapCircle = styled.span<{ rotate: number; scale: number }>`
 
 	// -------- Mobile ----------------
 	@media screen and (max-width: 767px) {
+		& > div:first-child {
+			top: -1rem;
+		}
 	}
 `;
 

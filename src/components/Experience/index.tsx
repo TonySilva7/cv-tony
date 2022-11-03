@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import Card from '../Card';
 import Timeline from '../Timeline';
 import { WrapExp } from './styles';
@@ -61,102 +61,85 @@ function Experience(props: propsTop) {
 	//.......................................
 
 	const arpia = {
-		company: 'Arpia Tecnologia',
+		company: 'ARPIA Tecnologia',
 		period: 'Outubro de 2021 - Emprego atual',
-		position: 'React Developer',
-		desc: ['Desenvolvimento de Sistemas,', 'Sustentação de Aplicações,'],
-		employer: 'Arpia Tecnologia - Uberlândia',
+		position: 'Full Stack Developer',
+		desc: ['Desenvolvimento de Sistemas web, APIs', 'Sustentação de Aplicações'],
 		arrow: true,
 	};
 
 	const devLife = {
 		company: 'DEVLIFE/Freelancer',
-		period: 'Novembro de 2018 - Outubro de 2021',
-		position: 'Fontend/Backend Developer',
+		period: 'Novembro de 2018 - Agosto de 2021',
+		position: 'Frontend/Backend Developer',
 		desc: [
 			'Desenvolvimento de WebApps,',
-			'Desenvolvimento de API’s Rest,',
 			'WebDesigner.',
 		],
-		employer: 'Freelancer/DevLife - Recife',
 		arrow: true,
 	};
 
 	const faama = {
-		company: 'FACULDADE ADV. DA AMAZÔNIA',
-		period: 'Agosto de 2011 - Agosto de 2018',
-		position: 'Chefe de Departamento | Auxiliar de Marketing',
+		company: 'COODESH',
+		period: 'Setembro de 2021',
+		position: 'Frontend Developer',
 		desc: [
-			'Assistente de marketing no primeiro ano, cooperando na manutenção do site, na dinâmica das redes sociais.',
-			'Coordenava grupos de funcionários responsável pela Escola de Música.',
+			'Desenvolvimento de sistemas web.',
 		],
-		employer: 'FAAMA - Belém',
 		arrow: true,
 	};
 
-	// const college = {
-	// 	company: 'COLÉGIO ADVENTISTA',
-	// 	period: 'Fevereiro 2007 - junho de 2011',
-	// 	position: 'Marketing',
-	// 	desc: [
-	// 		'Fidelizar alunos e conquistar novos,',
-	// 		'Gerenciar o relacionamento dos alunos com a instituição,',
-	// 		'Promoção de eventos, administração do site, redes sociais,',
-	// 	],
-	// 	employer: 'Rozivaldo Neto - Uruará',
-	// 	arrow: true,
-	// };
-
 	return (
-		<WrapExp id='experience'>
+		<WrapExp id='experience' >
 			<h1>EXPERIÊNCIA</h1>
+			<div id='divider' />
 			<div>
 				<aside>
-					{/* Antigo DevLife */}
+					{/* Antigo DevLife */ }
 					<Card
-						company={arpia.company}
-						period={arpia.period}
-						position={arpia.position}
-						desc={arpia.desc}
-						employer={arpia.employer}
-						opacity={opcDL}
-						margin={mrgDL}
-						scale={sclDL}
+						company={ arpia.company }
+						period={ arpia.period }
+						position={ arpia.position }
+						desc={ arpia.desc }
+						opacity={ opcDL }
+						margin={ mrgDL }
+						scale={ sclDL }
 						id='devLife'
 					/>
+
 					<Card
-						company={devLife.company}
-						period={devLife.period}
-						position={devLife.position}
-						desc={devLife.desc}
-						employer={devLife.employer}
+						company={ faama.company }
+						period={ faama.period }
+						position={ faama.position }
+						desc={ faama.desc }
 						arrow
-						opacity={opcFA}
-						margin={mrgFA}
-						scale={sclFA}
-						id='faama'
-					/>
-					<Card
-						company={faama.company}
-						period={faama.period}
-						position={faama.position}
-						desc={faama.desc}
-						employer={faama.employer}
-						opacity={opcIT}
-						margin={mrgIT}
-						scale={sclIT}
+						opacity={ opcIT }
+						margin={ mrgIT }
+						scale={ sclIT }
 						id='iatai'
+					/>
+
+					<Card
+						company={ devLife.company }
+						period={ devLife.period }
+						position={ devLife.position }
+						desc={ devLife.desc }
+
+						opacity={ opcFA }
+						margin={ mrgFA }
+						scale={ sclFA }
+						id='faama'
 					/>
 				</aside>
 
 				<Timeline
-					rotateDL={rotateDL}
-					rotateFA={rotateFA}
-					rotateIT={rotateIT}
-					scaleDL={sclDL}
-					scaleFA={sclFA}
-					scaleIT={sclIT}
-					lineHeight={lineHeight}
+					rotateDL={ rotateDL }
+					rotateFA={ rotateFA }
+					rotateIT={ rotateIT }
+					scaleDL={ sclDL }
+					scaleFA={ sclFA }
+					scaleIT={ sclIT }
+					lineHeight={ lineHeight }
 				/>
 			</div>
 		</WrapExp>

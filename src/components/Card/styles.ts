@@ -11,7 +11,7 @@ export const Container = styled.section<{
 	transition: var(--slow-animate);
 	opacity: ${(props) => `${props.opacity}%`};
 	transform: scale(${(props) => props.scale})
-		translateX(${(props) => `${props.margin}px`});
+	translateX(${(props) => `${props.margin}px`});
 
 	& > div {
 		width: 350px;

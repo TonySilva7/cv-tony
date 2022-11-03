@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com';
-import React, { BaseSyntheticEvent, useEffect, useState } from 'react';
+import { BaseSyntheticEvent, useEffect, useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { IoMailOutline } from 'react-icons/io5';
 import { mailToken } from '../../api';
@@ -25,7 +25,7 @@ function SendMail() {
 	}
 
 	return (
-		<form onSubmit={sendEmail}>
+		<form onSubmit={ sendEmail }>
 			<label htmlFor='name'> Nome: </label>
 			<input type='text' id='name' name='name' placeholder='Nome...' />
 
@@ -61,23 +61,23 @@ function Contact(props: propsTop) {
 	return (
 		<WrapContact id='contact'>
 			<h1>CONTATO</h1>
-			<WrapForm id='contact-form' margin={margin} opacity={opc}>
+			<WrapForm id='contact-form' margin={ margin } opacity={ opc }>
 				<address>
 					<div>
-						<FaWhatsapp size={30} />
 						<a
-							href='https://wa.me/5581993235866?text=Oi...'
+							href='https://wa.me/5543988631067?text=Oi Tony, vi seu CV...'
 							target='_blank'
 							rel='noreferrer'
 						>
-							<strong>(81)</strong> 9 9323 - 5866
+							<FaWhatsapp size={ 30 } />
+							<p><strong>(43)</strong> 9 8863 - 1067</p>
 						</a>
 					</div>
 
 					<div>
-						<IoMailOutline size={30} />
 						<a href='mailto:tony.deve7oper@gmail.com?subject=Recrutamento&body=Opaaa, Olá Tony,'>
-							tony.deve7oper@gmail.com
+							<IoMailOutline size={ 30 } />
+							<p>tony.deve7oper@gmail.com</p>
 						</a>
 					</div>
 				</address>

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import Img from '../assets/img/profile1.png';
+import Img from '../../assets/img/profile1.png';
 import { WrapContainer, WrapPicture, WrapPresentation } from './styles';
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
 
 	return (
 		<WrapContainer>
-			<WrapPresentation myMargin={myMargin} myOpacity={myOpacity}>
+			<WrapPresentation myMargin={ myMargin } myOpacity={ myOpacity }>
 				<h1>
 					Olá, <br /> Sou Tony! <br />
 				</h1>
@@ -29,8 +29,8 @@ function Home() {
 				</Link>
 			</WrapPresentation>
 
-			<WrapPicture myMargin={myMargin} myOpacity={myOpacity}>
-				<img src={Img} alt='imagem' />
+			<WrapPicture myMargin={ myMargin } myOpacity={ myOpacity }>
+				<img src={ Img } alt='imagem' />
 				<div>
 					<a href='https://www.linkedin.com/in/tony-sz-silva' target='_new'>
 						<FaLinkedin />

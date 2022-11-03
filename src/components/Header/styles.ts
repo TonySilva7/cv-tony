@@ -82,7 +82,7 @@ export const NavContainer = styled.nav<{
 	/********** RESPONSIVIDADE *****************/
 	@media screen and (max-width: 767px) {
 		flex-direction: column;
-		height: ${(props) => props.height}vh;
+		height: 100%;
 		width: ${(props) => props.width}rem;
 		background: rgba(250, 250, 250, 0.96);
 		background: ${(props) => (props.isClicked ? 'rgba(250, 250, 250, 0.96)' : 'none')};
@@ -167,11 +167,11 @@ export const HamburgerMenu = styled.div<{ isClicked: boolean }>`
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 45px;
-		height: 50px;
+		width:  2.5rem;
+		height: 2.5rem;
 		margin-top: 1rem;
 		margin-left: 1rem;
-
+		
 		& > div {
 			display: block;
 			position: relative;
@@ -182,12 +182,13 @@ export const HamburgerMenu = styled.div<{ isClicked: boolean }>`
 			& > span {
 				display: flex;
 				position: absolute;
-				height: 5px;
-				width: 33px;
+				height: 4px;
+				width: 28px;
 				background-color: ${(props) => (props.isClicked ? '#444' : '#fff')};
 				border-radius: 2px;
 				margin-left: 0.4rem;
 				transition: var(--fast-animate);
+
 			}
 
 			& > span:nth-child(1) {

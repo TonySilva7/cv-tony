@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { Container } from './styles';
 
 interface dataCard {
@@ -6,7 +6,7 @@ interface dataCard {
 	period: string;
 	position: string;
 	desc: string[];
-	employer: string;
+	employer?: string;
 	arrow?: boolean;
 	opacity: number;
 	margin: number;
@@ -19,42 +19,42 @@ export default function Card(info: dataCard) {
 
 	return (
 		<Container
-			ref={sectionRef}
-			opacity={info.opacity}
-			scale={info.scale}
-			margin={info.margin}
-			id={info.id}
+			ref={ sectionRef }
+			opacity={ info.opacity }
+			scale={ info.scale }
+			margin={ info.margin }
+			id={ info.id }
 		>
-			{info.arrow && <span></span>}
+			{ info.arrow && <span></span> }
 			<bdo></bdo>
 			<div>
 				<header>
 					<h1>Empresa:</h1>
-					<h2>{info.company}</h2>
+					<h2>{ info.company }</h2>
 				</header>
 				<footer>
-					<em>{info.period}</em>
+					<em>{ info.period }</em>
 					<p>
 						<strong>Cargo:</strong>
-						{info.position}
+						{ info.position }
 					</p>
 					<div>
 						<strong>Responsabilidades: </strong>
 						<ul>
-							{info.desc.map((elem) => (
-								<li key={elem}>
-									<strong>&rsaquo;</strong> {elem}
+							{ info.desc.map((elem) => (
+								<li key={ elem }>
+									<strong>&rsaquo;</strong> { elem }
 								</li>
-							))}
+							)) }
 						</ul>
 					</div>
-					<p>
+					{/* <p>
 						<strong>Empregador:</strong>
-						{info.employer}
-					</p>
+						{ info.employer }
+					</p> */}
 				</footer>
 			</div>
-			{!info.arrow && <span></span>}
+			{ !info.arrow && <span></span> }
 		</Container>
 	);
 }

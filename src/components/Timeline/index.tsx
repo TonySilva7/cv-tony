@@ -1,4 +1,3 @@
-import React from 'react';
 import { WrapCircle, WrapLine, WrapTimeLine } from './styles';
 
 interface contentTimeLine {
@@ -18,27 +17,27 @@ interface contentCircle {
 
 export function Circle({ ...props }: contentCircle) {
 	return (
-		<WrapCircle rotate={props.rotate} scale={props.scale}>
+		<WrapCircle rotate={ props.rotate } scale={ props.scale }>
 			<div></div>
 			<div>
-				<h1>{props.content}</h1>
+				<h1>{ props.content }</h1>
 			</div>
 		</WrapCircle>
 	);
 }
 
 export function Line({ ...props }) {
-	return <WrapLine height={props.lineHeight} />;
+	return <WrapLine height={ props.lineHeight } />;
 }
 
 export default function Timeline({ ...props }: contentTimeLine) {
 	return (
 		<WrapTimeLine>
-			<Line lineHeight={props.lineHeight} />
+			<Line lineHeight={ props.lineHeight } />
 
-			<Circle content='2021' rotate={props.rotateDL} scale={props.scaleDL} />
-			<Circle content='2018' rotate={props.rotateFA} scale={props.scaleFA} />
-			<Circle content='2011' rotate={props.rotateIT} scale={props.scaleIT} />
+			<Circle content='2021' rotate={ props.rotateDL } scale={ props.scaleDL } />
+			<Circle content='2021' rotate={ props.rotateIT } scale={ props.scaleIT } />
+			<Circle content='2018' rotate={ props.rotateFA } scale={ props.scaleFA } />
 		</WrapTimeLine>
 	);
 }
