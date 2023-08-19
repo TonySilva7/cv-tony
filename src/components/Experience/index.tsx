@@ -63,8 +63,8 @@ function Experience(props: propsTop) {
 	const arpia = {
 		company: 'ARPIA Tecnologia',
 		period: 'Outubro de 2021 - Emprego atual',
-		position: 'Full Stack Developer',
-		desc: ['Desenvolvimento de Sistemas web, APIs', 'Sustentação de Aplicações'],
+		position: 'Analista/Desenvolvedor sênior',
+		desc: ['Desenvolvimento de Sistemas/APIs', 'Sustentação de Aplicações'],
 		arrow: true,
 	};
 
